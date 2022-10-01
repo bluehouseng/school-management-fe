@@ -37,7 +37,7 @@ export default Object.freeze({
     settingsAccount: "/settings/account" ,
     settingNotification: "/settings/notifications" ,
     settingApp: "/settings/apps", 
-    plans:"/settings/plans" ,
+    plans: "/settings/plans" ,
     billing:"/settings/billing" ,
     feedback:"/settings/feedback" ,
     changelog: "/utility/changelog" ,
