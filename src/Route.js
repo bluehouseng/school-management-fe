@@ -60,12 +60,11 @@ export default Object.freeze({
     modal: "/component/modal" ,
     pagination: "/component/pagination" ,
     tabs: "/component/tabs",
-    breadcrumb "/component/breadcrumb" ,
+    breadcrumb "/component/BreadcrumbPage" ,
     badge: "/component/badge" ,
     avatar: "/component/avatar" ,
     tooltip: "/component/tooltip" ,
     according:"/component/accordion" ,
     icons:"/component/icons" ,
-           "*" ,
 
 })
