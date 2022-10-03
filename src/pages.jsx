@@ -131,7 +131,7 @@ const pages = [
  { path: routes.tooltip, element: <TooltipPage /> },
  { path: routes.button, element: <ButtonPage /> },
  { path: routes.icons, element: <IconsPage /> },
- { path: routes.tooltip, element: <Tooltip /> },
+ // { path: routes.tooltip, element: <TooltipPage /> },
  { path: routes.according, element: <AccordionPage /> },
  // { path: '/', element: < /> },
 
