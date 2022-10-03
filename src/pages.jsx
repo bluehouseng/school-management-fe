@@ -42,7 +42,7 @@ import Changelog from './pages/utility/Changelog';
 import Roadmap from './pages/utility/Roadmap';
 import Faqs from './pages/utility/Faqs';
 import EmptyState from './pages/utility/EmptyState';
-import PageNotFound from './pages/utility/PageNotFound';
+// import PageNotFound from './pages/utility/PageNotFound';
 import KnowledgeBase from './pages/utility/KnowledgeBase';
 import Signin from './pages/Signin';
 import Signup from './pages/Signup';
@@ -64,17 +64,9 @@ import AvatarPage from './pages/component/AvatarPage';
 import TooltipPage from './pages/component/TooltipPage';
 import AccordionPage from './pages/component/AccordionPage';
 import IconsPage from './pages/component/IconsPage';
-
-
-
-
-
-
-
-
-
-import Transactions from './pages/finance/Transactions';
+// import Transactions from './pages/finance/Transactions';
 import routes from './routes';
+
 const pages = [
  { path: routes.home, element: <Dashboard /> },
  { path: routes.dashboardAnalytics, element: <Analytics /> },
@@ -118,7 +110,7 @@ const pages = [
  { path: routes.roadmap, element: <Roadmap /> },
  { path: routes.faqs, element: <Faqs /> },
  { path: routes.empty, element: <EmptyState /> },
- // { path: routes., element: <PageNotFound /> },git
+ // { path: routes., element: <PageNotFound /> },
  { path: routes.Knowledge, element: <KnowledgeBase /> },
  { path: routes.signin, element: <Signin /> },
  { path: routes.signup, element: <Signup /> },
@@ -137,7 +129,7 @@ const pages = [
  { path: routes.badge, element: <BadgePage /> },
  { path: routes.avatar, element: <AvatarPage /> },
  { path: routes.tooltip, element: <TooltipPage /> },
- { path: routes.tooltip, element: <TooltipPage /> },
+ { path: routes.button, element: <ButtonPage /> },
  { path: routes.icons, element: <IconsPage /> },
  { path: routes.tooltip, element: <Tooltip /> },
  { path: routes.according, element: <AccordionPage /> },
