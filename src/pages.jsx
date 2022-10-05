@@ -133,7 +133,6 @@ const pages = [
  { path: routes.icons, element: <IconsPage /> },
  // { path: routes.tooltip, element: <TooltipPage /> },
  { path: routes.according, element: <AccordionPage /> },
- // { path: '/', element: < /> },
 
 ]
 
