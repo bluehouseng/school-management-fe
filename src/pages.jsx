@@ -64,6 +64,12 @@ import AvatarPage from './pages/component/AvatarPage';
 import TooltipPage from './pages/component/TooltipPage';
 import AccordionPage from './pages/component/AccordionPage';
 import IconsPage from './pages/component/IconsPage';
+import StudentDashboard from './pages/studentDashboard/StudentDashboard';
+import StudentCourses from './pages/studentDashboard/StudentCourses';
+import StudentFees from './pages/studentDashboard/StudentFees';
+import StudentCheckResult from './pages/studentDashboard/StudentCheckResult';
+import StudentTranscript from './pages/studentDashboard/StudentTranscript';
+import StudentRegistration from './pages/studentDashboard/StudentRegistration';
 // import Transactions from './pages/finance/Transactions';
 import routes from './routes';
 
@@ -133,13 +139,25 @@ const pages = [
     { path: routes.icons, element: <IconsPage /> },
     // { path: routes.tooltip, element: <TooltipPage /> },
     { path: routes.according, element: <AccordionPage /> },
+    { path: routes.studentDashboard, element: <StudentDashboard /> },
+    { path: routes.studentCourses, element: <StudentCourses /> },
+    { path: routes.studentFees, element: <StudentFees /> },
+    { path: routes.studentCheckResult, element: <StudentCheckResult /> },
+    { path: routes.studentTranscript, element: <StudentTranscript /> },
+    { path: routes.studentRegistration, element: <StudentRegistration /> },
     // { path: '/', element: < /> },
-
+    
 ];
 
 const student = [
-    { path: '/', element: <h1>Student</h1> },
+    { path: routes.home, element: <Dashboard /> },
     { path: routes.signin, element: <Signin /> },
+    { path: routes.studentDashboard, element: <StudentDashboard /> },
+    { path: routes.studentCourses, element: <StudentCourses /> },
+    { path: routes.studentFees, element: <StudentFees /> },
+    { path: routes.studentCheckResult, element: <StudentCheckResult /> },
+    { path: routes.studentTranscript, element: <StudentTranscript /> },
+    { path: routes.studentRegistration, element: <StudentRegistration /> },
 ]
 
 const hod = [
@@ -164,7 +182,7 @@ const loggedOut = [
 
 export const general = () => {
     const routes = [
-        { path: "*", element: <div style={{minHeight: '100vh'}} className="flex justify-center items-center"><h1>404 not found</h1></div> },
+        { path: "*", element: <div style={{ minHeight: '100vh' }} className="flex justify-center items-center"><h1>404 not found</h1></div> },
     ]
     return routes;
 }

@@ -62,6 +62,12 @@ export default Object.freeze({
   badge: "/component/badge",
   avatar: "/component/avatar",
   tooltip: "/component/tooltip",
+  studentDashboard: "/student/dashboard",
+  studentCourses: "/student/courses",
+  studentFees: "/student/fees",
+  studentCheckResult: "/student/checkresult",
+  studentTranscript: "/student/transcript",
+  studentRegistration: "/student/registration",
   according: "/component/accordion",
   icons: "/component/icons",
 });

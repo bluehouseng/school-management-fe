@@ -78,10 +78,11 @@ function DashboardCard01() {
             </li>
           </EditMenu>
         </header>
+
         <h2 className="text-lg font-semibold text-slate-800 mb-2">Acme Plus</h2>
         <div className="text-xs font-semibold text-slate-400 uppercase mb-1">Sales</div>
         <div className="flex items-start">
-          <div className="text-3xl font-bold text-slate-800 mr-2">$24,780</div>
+          <div className="text-3xl font-bold text-slate-800 mr-2">$2,391</div>
           <div className="text-sm font-semibold text-white px-1.5 bg-emerald-500 rounded-full">+49%</div>
         </div>
       </div>

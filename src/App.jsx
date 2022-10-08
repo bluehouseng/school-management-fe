@@ -40,8 +40,8 @@ function App() {
       <Routes>
         {/* <Route path='/' element={(() => (<h1>Hello</h1>))()}/> */}
         {renderRoute[userRole] }
-        {LoggedOut}
-        {CommonPath}
+        {/* {LoggedOut}
+        {CommonPath} */}
       </Routes>
     </>
   );
