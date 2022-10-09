@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 
 import StudentSidebar from './StudentSidebar';
 import Header from '../../partials/Header';
-import WelcomeBanner from '../../partials/dashboard/WelcomeBanner';
+// import WelcomeBanner from '../../partials/dashboard/WelcomeBanner';
 import DashboardAvatars from '../../partials/dashboard/DashboardAvatars';
 import FilterButton from '../../components/DropdownFilter';
 import Datepicker from '../../components/Datepicker';
 import StudentCard01 from './StudentCard/StudentCard01';
 import StudentCard02 from './StudentCard/StudentCard02';
-import StudentCard03 from './StudentCard/StudentCard03';
-import StudentCard04 from './StudentCard/StudentCard04';
-import StudentCard05 from './StudentCard/StudentCard05';
+// import StudentCard03 from './StudentCard/StudentCard03';
+// import StudentCard04 from './StudentCard/StudentCard04';
+// import StudentCard05 from './StudentCard/StudentCard05';
 import StudentHeader from './StudentHeader';
 // import DashboardCard06 from '../../partials/dashboard/DashboardCard06';
 // import DashboardCard07 from '../../partials/dashboard/DashboardCard07';
@@ -65,18 +65,18 @@ function StudentDashboard() {
             </div>
 
             {/* Cards */}
-            <div className="grid grid-cols-12 gap-6">
+            <div className="grid grid-cols-12 gap-8 ">
 
               {/* Line chart (Acme Plus) */}
               <StudentCard01 />
               {/* Line chart (Acme Advanced) */}
               <StudentCard02 />
               {/* Line chart (Acme Professional) */}
-              <StudentCard03 />
+              {/* <StudentCard03 /> */}
               {/* Bar chart (Direct vs Indirect) */}
-              <StudentCard04 />
+              {/* <StudentCard04 /> */}
               {/* Line chart (Real Time Value) */}
-              <StudentCard05 />
+              {/* <StudentCard05 /> */}
               {/* Doughnut chart (Top Countries)
               <DashboardCard06 />
               Table (Top Channels)
@@ -93,8 +93,34 @@ function StudentDashboard() {
             </div>
 
           </div>
-        </main>
+           <div className='mx-4 rounded-md'>
+            <table className="table table-hover shadow-xl table-bordered rounded-md">
+  <thead className='table-secondary rounded-lg'>
+    <tr>
+      <th colspan="0.5" scope="col">id</th>
+      <th colspan="2" scope="col">Transaction</th>
+      <th colspan="2" scope="col">Session</th>
+      <th colspan="2" scope="col">Status</th>
+      <th colspan="2" scope="col">Paid for</th>
+      <th colspan="2" scope="col">Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+    </tr>
 
+  </tbody>
+</table>
+        </div>
+        </main>
+       
+      
       </div>
 
     </div>
