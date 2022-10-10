@@ -2,12 +2,8 @@ import React, { useState } from 'react';
 
 import StudentSidebar from './StudentSidebar';
 import Header from '../../partials/Header';
-<<<<<<< HEAD
 import StudentAnalytics from './StudentAnalytics';
-import WelcomeBanner from '../../partials/dashboard/WelcomeBanner';
-=======
 // import WelcomeBanner from '../../partials/dashboard/WelcomeBanner';
->>>>>>> 319ba20d236c0531a4f7f0214db795aa316fe7f3
 import DashboardAvatars from '../../partials/dashboard/DashboardAvatars';
 import FilterButton from '../../components/DropdownFilter';
 import Datepicker from '../../components/Datepicker';
@@ -127,7 +123,7 @@ function StudentDashboard() {
 </table>
         </div>
         </main>
-       
+
       
       </div>
 
