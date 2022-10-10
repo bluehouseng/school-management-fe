@@ -126,7 +126,7 @@ function StudentCard02() {
             </div>
           </div>
         </div>
-        <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white mt-3">Primary</button>
+        <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white mt-3">Pay</button>
       </div>
     </div>
   );
