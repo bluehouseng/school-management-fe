@@ -70,6 +70,7 @@ import StudentFees from './pages/studentDashboard/StudentFees';
 import StudentCheckResult from './pages/studentDashboard/StudentCheckResult';
 import StudentTranscript from './pages/studentDashboard/StudentTranscript';
 import StudentRegistration from './pages/studentDashboard/StudentRegistration';
+import StudentHostel from './pages/studentDashboard/StudentHostel';
 // import Transactions from './pages/finance/Transactions';
 import routes from './routes';
 
@@ -145,6 +146,7 @@ const pages = [
     { path: routes.studentCheckResult, element: <StudentCheckResult /> },
     { path: routes.studentTranscript, element: <StudentTranscript /> },
     { path: routes.studentRegistration, element: <StudentRegistration /> },
+    { path: routes.studentHostel, element: <StudentHostel/> },
     // { path: '/', element: < /> },
     
 ];
@@ -158,6 +160,7 @@ const student = [
     { path: routes.studentCheckResult, element: <StudentCheckResult /> },
     { path: routes.studentTranscript, element: <StudentTranscript /> },
     { path: routes.studentRegistration, element: <StudentRegistration /> },
+    { path: routes.studentHostel, element: <StudentHostel/> },
 ]
 
 const hod = [

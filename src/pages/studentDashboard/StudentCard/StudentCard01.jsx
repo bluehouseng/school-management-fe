@@ -7,7 +7,7 @@ function StudentCard01() {
       <div> 
 
         <NavLink to='/student/fees'>
-            <div className="bg-slate-100 rounded-sm text-center mr-5 py-10 px-10 mt-4">
+            <div className="bg-slate-100 rounded-md text-center mr-5 py-10 px-10 mt-4">
 
           <div className="flex flex-col h-full">
 
@@ -20,7 +20,7 @@ function StudentCard01() {
       
 
         <NavLink to='/student/registration'>
-          <div className="bg-slate-100 rounded-sm text-center box-border px-10  mr-5 mt-4 mb-4">
+          <div className="bg-slate-100 rounded-md text-center box-border px-10  mr-5 mt-4 mb-4">
             <div className="flex flex-col  py-10 ">
 
               <h3 className="text-lg font-semibold  text-slate-800 mb-1">Course registration:</h3>
@@ -39,7 +39,7 @@ function StudentCard01() {
       <div>
 
         <NavLink to='/student/hostel'>
-          <div className="bg-slate-100 rounded-sm text-center mr-5 py-10 px-10 mt-4">
+          <div className="bg-slate-100 rounded-md text-center mr-5 py-10 px-10 mt-4">
 
           <div className="flex flex-col h-full">
 
@@ -53,7 +53,7 @@ function StudentCard01() {
         
 
         <NavLink to='/student/checkresult'>
-<div className="bg-slate-100 rounded-sm text-center py-10 px-10 mr-5 mt-4 mb-4">
+<div className="bg-slate-100 rounded-md text-center py-10 px-10 mr-5 mt-4 mb-4">
           <div className="flex flex-col h-full">
 
             <h3 className="text-lg font-semibold text-slate-800 mb-1">Check result:</h3>

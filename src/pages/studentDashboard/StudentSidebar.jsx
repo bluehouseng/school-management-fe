@@ -1,5 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
+import {GiBookshelf} from 'react-icons/gi'
+import {BiBookmarkAlt} from 'react-icons/bi'
+import {MdPayment } from 'react-icons/md'
+import {CgTranscript } from 'react-icons/cg'
+import {MdAppRegistration } from 'react-icons/md'
 
 import SidebarLinkGroup from '../../partials/SidebarLinkGroup';
 
@@ -167,7 +172,7 @@ function StudentSidebar({
                         </div>
                       </a>
                       <div className="lg:hidden lg:sidebar-expanded:block 2xl:block">
-                        <ul className={`pl-9 mt-1 ${!open && 'hidden'}`}>
+                        <ul className={` mt-1 ${!open && 'hidden'}`}>
                           <li className="mb-5 last:mb-0 mt-5">
                             <NavLink
                               end
@@ -176,9 +181,12 @@ function StudentSidebar({
                                 'block text-slate-400 hover:text-slate-200 transition duration-150 truncate ' + (isActive ? '!text-indigo-500' : '')
                               }
                             >
+                              <div className='flex items-center' >
+                              <div className='text-blue-700 text-4xl ml-2 font-bold mr-2'><GiBookshelf /></div>
                               <span className="text-md font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
                                 Courses
                               </span>
+                                  </div>
                             </NavLink>
                           </li>
                           <li className="mb-5 last:mb-0">
@@ -189,9 +197,14 @@ function StudentSidebar({
                                 'block text-slate-400 hover:text-slate-200 transition duration-150 truncate ' + (isActive ? '!text-indigo-500' : '')
                               }
                             >
+<div className='flex items-center'>
+  <div className='text-blue-700 text-4xl ml-2 font-bold mr-2'><BiBookmarkAlt /></div>
                               <span className="text-md font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
                                 Check result
                               </span>
+</div>
+
+
                             </NavLink>
                           </li>
                           <li className="mb-5 last:mb-0">
@@ -202,9 +215,14 @@ function StudentSidebar({
                                 'block text-slate-400 hover:text-slate-200 transition duration-150 truncate ' + (isActive ? '!text-indigo-500' : '')
                               }
                             >
-                              <span className="text-md font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
+
+                              <div className='flex items-center'>
+                                <div className='text-blue-700 text-4xl ml-2 font-bold mr-2'><MdPayment /></div>
+                                 <span className="text-md font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
                                 Fees
                               </span>
+                              </div>
+                             
                             </NavLink>
                           </li>
                           <li className="mb-5 last:mb-0">
@@ -215,9 +233,13 @@ function StudentSidebar({
                                 'block text-slate-400 hover:text-slate-200 transition duration-150 truncate ' + (isActive ? '!text-indigo-500' : '')
                               }
                             >
-                              <span className="text-md font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
+<div className='flex items-center'>
+  <div className='text-blue-700 text-4xl ml-2 font-bold mr-2'><CgTranscript /></div>
+  <span className="text-md font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
                                 Transcript
                               </span>
+</div>
+                              
                             </NavLink>
                           </li>
                           <li className="mb-5 last:mb-0">
@@ -228,9 +250,16 @@ function StudentSidebar({
                                 'block text-slate-400 hover:text-slate-200 transition duration-150 truncate ' + (isActive ? '!text-indigo-500' : '')
                               }
                             >
-                              <span className="text-md font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
+
+                              <div className='flex items-center'>
+                                <div className='text-blue-700 text-4xl ml-2 font-bold mr-2'>
+<MdAppRegistration />
+                                </div>
+                                  <span className="text-md font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
                                 Registration
                               </span>
+                              </div>
+                            
                             </NavLink>
                           </li>
                         </ul>
