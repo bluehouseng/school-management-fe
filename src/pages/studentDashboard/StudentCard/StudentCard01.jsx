@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 function StudentCard01() {
   return (
     <div className="col-span-full xl:col-span-8 px-10 py-10 bg-white   shadow-lg rounded-md border border-slate-200">
-      <div className=" flex wrap " > 
+      <div className=" flex wrap  " > 
 
         <NavLink to='/student/fees'>
             <div className="bg-slate-100 rounded-md text-center mr-5 py-10 px-10 mt-4">
