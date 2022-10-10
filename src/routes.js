@@ -68,6 +68,7 @@ export default Object.freeze({
   studentCheckResult: "/student/checkresult",
   studentTranscript: "/student/transcript",
   studentRegistration: "/student/registration",
+  studentHostel: "/student/hostel",
   according: "/component/accordion",
   icons: "/component/icons",
 });
