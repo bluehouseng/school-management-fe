@@ -6,7 +6,7 @@ function StudentCard02() {
   return (
     <div className="flex flex-col col-span-full xl:col-span-4 bg-gradient-to-b from-slate-700 to-slate-800 shadow-lg rounded-sm border border-slate-800">
       <header className="px-5 py-4 border-b border-slate-600 flex items-center">
-        <h2 className="font-semibold text-slate-200">Active Cards</h2>
+        <h2 className="font-semibold text-slate-200">PAYMENTS</h2>
       </header>
       <div className="h-full flex flex-col px-5 py-6">
         {/* CC container */}
@@ -104,7 +104,7 @@ function StudentCard02() {
           <div className="space-y-2">
             <div>
               <div className="flex justify-between text-sm mb-2">
-                <div className="text-slate-300">Payment Limits</div>
+                <div className="text-slate-300">Current Fees</div>
                 <div className="text-slate-400 italic">
                   $780,00 <span className="text-slate-500">/</span> $1,500.00
                 </div>
@@ -113,9 +113,22 @@ function StudentCard02() {
                 <div className="absolute inset-0 bg-emerald-500" aria-hidden="true" style={{ width: '50%' }} />
               </div>
             </div>
+
+            <div>
+            <div className="flex justify-between text-sm mb-2">
+                <div className="text-slate-300">Paid</div>
+                <div className="text-slate-400 italic">
+                  $780,00 <span className="text-slate-500">/</span> $1,500.00
+                </div>
+              </div>
+              <div className="relative w-full h-2 bg-slate-600">
+                <div className="absolute inset-0 bg-emerald-500" aria-hidden="true" style={{ width: '45%' }} />
+              </div>
+            </div>
+
             <div>
               <div className="flex justify-between text-sm mb-2">
-                <div className="text-slate-300">ATM Limits</div>
+                <div className="text-slate-300">Oustanding</div>
                 <div className="text-slate-400 italic">
                   $179,00 <span className="text-slate-500">/</span> $1,000.00
                 </div>
@@ -126,7 +139,8 @@ function StudentCard02() {
             </div>
           </div>
         </div>
-        <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white mt-3">Pay</button>
+
+        <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white mt-3">PAY</button>
       </div>
     </div>
   );
