@@ -14,7 +14,7 @@ import StudentCard02 from './StudentCard/StudentCard02';
 // import StudentCard05 from './StudentCard/StudentCard05';
 import StudentHeader from './StudentHeader';
 // import DashboardCard06 from '../../partials/dashboard/DashboardCard06';
-// import DashboardCard07 from '../../partials/dashboard/DashboardCard07';
+// import DashboardCard07 from '../../partials/dashboard/DashboardCard07';cdcdcdcd
 // import DashboardCard08 from '../../partials/dashboard/DashboardCard08';
 // import DashboardCard09 from '../../partials/dashboard/DashboardCard09';
 // import DashboardCard10 from '../../partials/dashboard/DashboardCard10';
@@ -99,7 +99,7 @@ function StudentDashboard() {
           </div>
            <div className='mx-4 rounded-md'>
             <table className="table table-hover shadow-xl table-bordered rounded-md">
-  <thead className='table-secondary rounded-lg'>
+  {/* <thead className='table-secondary rounded-lg'>
     <tr>
       <th colspan="0.5" scope="col">id</th>
       <th colspan="2" scope="col">Transaction</th>
@@ -118,16 +118,41 @@ function StudentDashboard() {
       <td colspan="2"></td>
       <td colspan="2"></td>
     </tr>
+  </tbody> */}
 
-  </tbody>
-</table>
+    {/* Table */}
+    <div className="overflow-x-auto">
+          <table className="table-auto w-full">
+            {/* Table header */}
+            <thead className="text-xs uppercase text-slate-400 bg-slate-50 rounded-sm">
+              <tr>
+                <th className="p-2 whitespace-nowrap">
+                  <div className="font-semibold text-left">id</div>
+                </th>
+                <th className="p-2 whitespace-nowrap">
+                  <div className="font-semibold text-left">Transaction</div>
+                </th>
+                <th className="p-2 whitespace-nowrap">
+                  <div className="font-semibold text-left">Session</div>
+                </th>
+                <th className="p-2 whitespace-nowrap">
+                  <div className="font-semibold text-center">Paid for</div>
+                </th>
+                <th className="p-2 whitespace-nowrap">
+                  <div className="font-semibold text-center">Status</div>
+                </th>
+                <th className="p-2 whitespace-nowrap">
+                  <div className="font-semibold text-center">Amount</div>
+                </th>
+              </tr>
+            </thead>
+          </table>
         </div>
-        </main>
-
-      
-      </div>
-
+      </table>
     </div>
+    </main>
+</div>
+</div>
   );
 }
 
