@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 
-import StudentSidebar from './StudentSidebar'
+import StudentSidebar from './StudentSidebar';
 import Header from '../../partials/Header';
-
+import DeleteButton from '../../partials/actions/DeleteButton';
+import DateSelect from '../../components/DateSelect';
+import FilterButton from '../../components/DropdownFilter';
+import OrdersTable from '../../partials/orders/OrdersTable';
+import PaginationClassic from '../../components/PaginationClassic';
 
 function StudentRegistration() {
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  
 
   return (
     <div className="flex h-screen overflow-hidden">
@@ -22,124 +26,584 @@ function StudentRegistration() {
         <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
 
         <main>
-          <div className="lg:relative lg:flex">
+        <div>
+    <div className="col-span-full bg-white shadow-lg rounded-sm border mt-3 border-slate-200">
+      <header className="px-5 py-4 border-b border-slate-100">
+        <h2 className="font-semibold text-slate-800 text-2xl">Welcome John, <div> please select the courses to register</div></h2>
+      </header>
+      <div className="p-3">
 
-            {/* Content */}
-            <div className="px-4 sm:px-6 lg:px-8 py-8 lg:grow lg:pr-8 xl:pr-16 2xl:ml-[80px]">
-              <div className="lg:max-w-[640px] lg:mx-auto">
-
-                {/* Cart items */}
-                <div className="mb-6 lg:mb-0">
-                  <div className="mb-3">
-                    <div className="flex text-sm font-medium text-slate-400 space-x-2">
-                      <span className="text-slate-500">Review</span>
-                      <span>-&gt;</span>
-                      <span className="text-slate-500">Payment</span>
-                      <span>-&gt;</span>
-                      <span className="text-indigo-500">Confirm</span>
+        {/* Table */}
+        <div className="overflow-x-auto">
+          <table className="table-auto w-full">
+            {/* Table header */}
+            <thead className="text-xs uppercase text-slate-400 bg-slate-50 rounded-sm">
+              <tr>
+                <th className="p-2 whitespace-nowrap">
+                  <div className="font-semibold text-left">id</div>
+                </th>
+                <th className="p-2 whitespace-nowrap">
+                  <div className="font-semibold text-left">Course Code</div>
+                </th>
+                <th className="p-2 whitespace-nowrap">
+                  <div className="font-semibold text-left">Course Title</div>
+                </th>
+                <th className="p-2 whitespace-nowrap">
+                  <div className="font-semibold text-center">Lecturer</div>
+                </th>
+                <th className="p-2 whitespace-nowrap">
+                  <div className="font-semibold text-center">Status</div>
+                </th>
+                <th className="p-2 whitespace-nowrap">
+                  <div className="font-semibold text-center">unit</div>
+                </th>
+                <th className="p-2 whitespace-nowrap">
+                  <div className="font-semibold text-left">type</div>
+                </th>
+                <th className="p-2 whitespace-nowrap">
+                  <div className="font-semibold text-left">select course</div>
+                </th>
+              </tr>
+            </thead>
+            {/* Table body */}
+            <tbody className="text-sm divide-y divide-slate-100">
+              {/* Row */}
+              <tr>
+                <td className="whitespace-nowrap">
+                  <div className="flex items-center">
+                    <div className="shrink-0 rounded-full mr-3 sm:mr-3 bg-indigo-500">
+                      
                     </div>
+                    <div className="font-medium text-slate-800">1</div>
                   </div>
-                  <header className="mb-6">
-                    {/* Title */}
-                    <h1 className="text-2xl md:text-3xl text-slate-800 font-bold mb-2">Welcome, complete your registration ✨</h1>
-                    <p>Please input the appopraite details in each of the space provided below</p>
-                  </header>
-                  {/* Billing Information */}
-                  <div className='border-2 p-4 flex items-center flex-col px-5'>
-                    <div className="text-slate-800 font-semibold  mb-4">Student Registration</div>
-
-                    <form className='m-6 '  >
-                      <div className="space-y-6">
-                        {/* 1st row */}
-                        <div className="md:flex space-y-4 md:space-y-0 md:space-x-8">
-                          <div className="flex-1">
-                            <label className="block text-sm font-medium mb-1" htmlFor="card-name">
-                              Name<span className="text-rose-500">*</span>
-                            </label>
-                            <input id="card-name" className="form-input w-72" type="text" defaultValue="Patrick" />
-                          </div>
-                          <div className="flex-1">
-                            <label className="block text-sm font-medium mb-1" htmlFor="card-surname">
-                              Surname<span className="text-rose-500">*</span>
-                            </label>
-                            <input id="card-surname" className="form-input w-72" type="text" defaultValue="Sullivan" />
-                          </div>
-                        </div>
-                        {/* 2nd row */}
-                        <div className="md:flex space-y-4 md:space-y-0 md:space-x-4">
-                          <div className="flex-1">
-                            <label className="block text-sm font-medium mb-1" htmlFor="Matric">
-                              Matric No<span className="text-rose-500">*</span>
-                            </label>
-                            <input id="Matric" className="form-input w-72" type="text" />
-                          </div>
-                          <div className="flex-1">
-                            <label className="block text-sm font-medium mb-1" htmlFor="card-city">
-                              Town/City<span className="text-rose-500">*</span>
-                            </label>
-                            <input id="card-city" className="form-input w-72" type="text" />
-                          </div>
-                        </div>
-                        {/* 3rd row */}
-                        <div className="md:flex space-y-4 md:space-y-0 md:space-x-4">
-                          <div className="flex-1">
-                            <label className="block text-sm font-medium mb-1" htmlFor="card-state">
-                              State/Country<span className="text-rose-500">*</span>
-                            </label>
-                            <input id="card-state" className="form-input w-72" type="text" />
-                          </div>
-                          <div className="flex-1">
-                            <label className="block text-sm font-medium mb-1" htmlFor="card-country">
-                              Country <span className="text-rose-500">*</span>
-                            </label>
-                            <select id="card-country" className="form-select w-full">
-                              <option>Nigeria</option>
-                              <option>Ghana</option>
-                              <option>Cameroon</option>
-                            </select>
-                          </div>
-                        </div>
-                        {/* 4th row */}
-                        <div className="md:flex space-y-4 md:space-y-0 md:space-x-4">
-                          <div className="flex-1">
-                            <label className="block text-sm font-medium mb-1" htmlFor="card-postcode">
-                              Phone no<span className="text-rose-500">*</span>
-                            </label>
-                            <input id="card-postcode" className="form-input w-72" type="tel" />
-                          </div>
-                          <div className="flex-1">
-                            <label className="block text-sm font-medium mb-1" htmlFor="card-vat">
-                             Next of king<span className="text-rose-500">*</span> 
-                            </label>
-                            <input id="card-vat" className="form-input w-72" type="text" />
-                          </div>
-                        </div>
-                        <div className="flex-1 text-center">
-                            <label className="block text-sm font-medium mb-1" htmlFor="card-vat">
-                             About your self:
-                            </label>
-                            <textarea id="card-vat" className="form-input w-full h-20" type="text" />
-                          </div>
-                        <div className="text-center">
-                          <button type="submit" className="btn bg-white border-slate-200 hover:border-slate-300 text-indigo-500">
-                            Submit
-                          </button>
-                        </div>
-                      </div>
-                    </form>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="flex shrink-0 -space-x-3 ml-5">
+                    Maths
                   </div>
-                  {/* Divider */}
-                  <hr className="my-6 border-t border-slate-200" />
-                  {/* Billing footer */}
-                  
-                </div>
-
-              </div>
-            </div>
-
-            {/* Sidebar */}
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="flex items-center">
+                    
+                    <div>Mathematics</div>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="mx-14 text-md text-center">Mr John</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-md text-white rounded-md text-center bg-rose-400">Prerequisite</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className=" mx-14 text-lg text-center">4</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-left font-medium mr-3 text-rose-500">composary</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-left font-medium text-emerald-500">
+                    <input type="checkbox" className='rounded-md text-center ml-11' />
+                  </div>
+                </td>
+              </tr>
+              {/* Row */}
+              {/* Row */}
+              <tr>
+                <td className="whitespace-nowrap">
+                  <div className="flex items-center">
+                    <div className="shrink-0 rounded-full mr-3 sm:mr-3 bg-indigo-500">
+                      
+                    </div>
+                    <div className="font-medium text-slate-800">2</div>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="flex shrink-0 -space-x-3 ml-5">
+                    Phy
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="flex items-center">
+                    
+                    <div>Physics</div>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="mx-14 text-md text-center">Mr Dung</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-md text-white rounded-md text-center bg-green-400">Null</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className=" mx-14 text-lg text-center">4</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-left font-medium mr-3 text-emerald-500">Elective</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-left font-medium text-emerald-500">
+                    <input type="checkbox" className='rounded-md text-center ml-11' />
+                  </div>
+                </td>
+              </tr>
+              {/* Row */}
+              {/* Row */}
+              <tr>
+                <td className="whitespace-nowrap">
+                  <div className="flex items-center">
+                    <div className="shrink-0 rounded-full mr-3 sm:mr-3 bg-indigo-500">
+                      
+                    </div>
+                    <div className="font-medium text-slate-800">3</div>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="flex shrink-0 -space-x-3 ml-5">
+                    Maths
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="flex items-center">
+                    
+                    <div>Mathematics</div>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="mx-14 text-md text-center">Mr John</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-md text-white rounded-md text-center bg-rose-400">Prerequisite</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className=" mx-14 text-lg text-center">4</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-left font-medium mr-3 text-rose-500">composary</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-left font-medium text-emerald-500">
+                    <input type="checkbox" className='rounded-md text-center ml-11' />
+                  </div>
+                </td>
+              </tr>
+              {/* Row */}
+              {/* Row */}
+              <tr>
+                <td className="whitespace-nowrap">
+                  <div className="flex items-center">
+                    <div className="shrink-0 rounded-full mr-3 sm:mr-3 bg-indigo-500">
+                      
+                    </div>
+                    <div className="font-medium text-slate-800">4</div>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="flex shrink-0 -space-x-3 ml-5">
+                    Eng
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="flex items-center">
+                    
+                    <div>English</div>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="mx-14 text-md text-center">Mr Tabnan</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-md text-white rounded-md text-center bg-blue-500">Non prerequisite</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className=" mx-14 text-lg text-center">2</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-left font-medium mr-3 text-rose-500">composary</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-left font-medium text-emerald-500">
+                    <input type="checkbox" className='rounded-md text-center ml-11' />
+                  </div>
+                </td>
+              </tr>
+              {/* Row */}
+              {/* Row */}
+              <tr>
+                <td className="whitespace-nowrap">
+                  <div className="flex items-center">
+                    <div className="shrink-0 rounded-full mr-3 sm:mr-3 bg-indigo-500">
+                      
+                    </div>
+                    <div className="font-medium text-slate-800">5</div>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="flex shrink-0 -space-x-3 ml-5">
+                    Maths
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="flex items-center">
+                    
+                    <div>Mathematics</div>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="mx-14 text-md text-center">Mr Collins</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-md text-white rounded-md text-center bg-rose-400">Prerequisite</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className=" mx-14 text-lg text-center">2</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-left font-medium mr-3 text-rose-500">composary</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-left font-medium text-emerald-500">
+                    <input type="checkbox" className='rounded-md text-center ml-11' />
+                  </div>
+                </td>
+              </tr>
+              {/* Row */}
+              {/* Row */}
+              <tr>
+                <td className="whitespace-nowrap">
+                  <div className="flex items-center">
+                    <div className="shrink-0 rounded-full mr-3 sm:mr-3 bg-indigo-500">
+                      
+                    </div>
+                    <div className="font-medium text-slate-800">6</div>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="flex shrink-0 -space-x-3 ml-5">
+                    Scs
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="flex items-center">
+                    
+                    <div>Science</div>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="mx-14 text-md text-center">Mr Mallum</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-md text-white rounded-md text-center bg-green-400">Null</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className=" mx-14 text-lg text-center">1</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-left font-medium mr-3 text-emerald-500 ">Elective</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-left font-medium text-emerald-500">
+                    <input type="checkbox" className='rounded-md text-center ml-11' />
+                  </div>
+                </td>
+              </tr>
+              {/* Row */}
+              {/* Row */}
+             
+              <tr>
+                <td className="whitespace-nowrap">
+                  <div className="flex items-center">
+                    <div className="shrink-0 rounded-full mr-3 sm:mr-3 bg-indigo-500">
+                      
+                    </div>
+                    <div className="font-medium text-slate-800">7</div>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="flex shrink-0 -space-x-3 ml-5">
+                    Maths
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="flex items-center">
+                    
+                    <div>Mathematics</div>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="mx-14 text-md text-center">Mr John</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-md text-white rounded-md text-center bg-rose-400">Prerequisite</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className=" mx-14 text-lg text-center">4</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-left font-medium mr-3 text-rose-500">composary</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-left font-medium text-emerald-500">
+                    <input type="checkbox" className='rounded-md text-center ml-11' />
+                  </div>
+                </td>
+              </tr>
+              {/* Row */}
+              {/* Row */}
+              <tr>
+                <td className="whitespace-nowrap">
+                  <div className="flex items-center">
+                    <div className="shrink-0 rounded-full mr-3 sm:mr-3 bg-indigo-500">
+                      
+                    </div>
+                    <div className="font-medium text-slate-800">8</div>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="flex shrink-0 -space-x-3 ml-5">
+                    Phy
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="flex items-center">
+                    
+                    <div>Physics</div>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="mx-14 text-md text-center">Mr Dung</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-md text-white rounded-md text-center bg-green-400">Null</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className=" mx-14 text-lg text-center">4</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-left font-medium mr-3 text-emerald-500">Elective</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-left font-medium text-emerald-500">
+                    <input type="checkbox" className='rounded-md text-center ml-11' />
+                  </div>
+                </td>
+              </tr>
+              {/* Row */}
+              {/* Row */}
+              <tr>
+                <td className="whitespace-nowrap">
+                  <div className="flex items-center">
+                    <div className="shrink-0 rounded-full mr-3 sm:mr-3 bg-indigo-500">
+                      
+                    </div>
+                    <div className="font-medium text-slate-800">9</div>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="flex shrink-0 -space-x-3 ml-5">
+                    Maths
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="flex items-center">
+                    
+                    <div>Mathematics</div>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="mx-14 text-md text-center">Mr John</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-md text-white rounded-md text-center bg-rose-400">Prerequisite</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className=" mx-14 text-lg text-center">4</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-left font-medium mr-3 text-rose-500">composary</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-left font-medium text-emerald-500">
+                    <input type="checkbox" className='rounded-md text-center ml-11' />
+                  </div>
+                </td>
+              </tr>
+              {/* Row */}
+              {/* Row */}
+              <tr>
+                <td className="whitespace-nowrap">
+                  <div className="flex items-center">
+                    <div className="shrink-0 rounded-full mr-3 sm:mr-3 bg-indigo-500">
+                      
+                    </div>
+                    <div className="font-medium text-slate-800">10</div>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="flex shrink-0 -space-x-3 ml-5">
+                    Eng
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="flex items-center">
+                    
+                    <div>English</div>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="mx-14 text-md text-center">Mr Tabnan</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-md text-white rounded-md text-center bg-blue-500">Non prerequisite</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className=" mx-14 text-lg text-center">2</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-left font-medium mr-3 text-rose-500">composary</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-left font-medium text-emerald-500">
+                    <input type="checkbox" className='rounded-md text-center ml-11' />
+                  </div>
+                </td>
+              </tr>
+              {/* Row */}
+              {/* Row */}
+              <tr>
+                <td className="whitespace-nowrap">
+                  <div className="flex items-center">
+                    <div className="shrink-0 rounded-full mr-3 sm:mr-3 bg-indigo-500">
+                      
+                    </div>
+                    <div className="font-medium text-slate-800">11</div>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="flex shrink-0 -space-x-3 ml-5">
+                    Maths
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="flex items-center">
+                    
+                    <div>Mathematics</div>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="mx-14 text-md text-center">Mr Collins</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-md text-white rounded-md text-center bg-rose-400">Prerequisite</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className=" mx-14 text-lg text-center">2</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-left font-medium mr-3 text-rose-500">composary</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-left font-medium text-emerald-500">
+                    <input type="checkbox" className='rounded-md text-center ml-11' />
+                  </div>
+                </td>
+              </tr>
+              {/* Row */}
+              {/* Row */}
+              <tr>
+                <td className="whitespace-nowrap">
+                  <div className="flex items-center">
+                    <div className="shrink-0 rounded-full mr-3 sm:mr-3 bg-indigo-500">
+                      
+                    </div>
+                    <div className="font-medium text-slate-800">12</div>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="flex shrink-0 -space-x-3 ml-5">
+                    Scs
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="flex items-center">
+                    
+                    <div>Science</div>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="mx-14 text-md text-center">Mr Mallum</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-md text-white rounded-md text-center bg-green-400">Null</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className=" mx-14 text-lg text-center">1</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-left font-medium mr-3 text-emerald-500 ">Elective</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-left font-medium text-emerald-500">
+                    <input type="checkbox" className='rounded-md text-center ml-11' />
+                  </div>
+                </td>
+              </tr>
+              {/* Row */}
+              {/* Row */}
+              <tr>
+                <td className="whitespace-nowrap">
+                  <div className="flex items-center">
+                    <div className="shrink-0 rounded-full mr-3 sm:mr-3 bg-indigo-500">
+                      
+                    </div>
+                    <div className="font-medium text-slate-800"></div>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="flex shrink-0 -space-x-3 ml-5">
+                    Total
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="flex items-center">
+                    
+                    <div></div>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="mx-14 text-md text-center"></div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-md text-white rounded-md text-center bg-rose-400"></div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className=" mx-14 text-lg text-center">30 unit</div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-left font-medium mr-3 text-emerald-500"></div>
+                </td>
+                <td className="p-2 whitespace-nowrap">
+                  <div className="text-left font-medium text-emerald-500">
+                    Selected 5
+                  </div>
+                </td>
+              </tr>
+              {/* Row */}
+              {/* Row */}
+            
+              {/* Row */}
           
+  
+            </tbody>
+<div className='flex justify-end mt-10 w-full'> <button type='submit' className="btn w-full flex-end  bg-indigo-500 hover:bg-indigo-600 text-white">Submit</button></div>
+           
+          </table>
 
+
+          
+        </div>
+      </div>
+    </div>
+   
           </div>
         </main>
 
