@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom'
 
 function StudentCard01() {
   return (
-    <div className="col-span-full xl:col-span-8 px-10 py-10 bg-white flex shadow-lg rounded-md border border-slate-200">
-      <div> 
+    <div className="col-span-full xl:col-span-8 px-10 py-10 bg-white   shadow-lg rounded-md border border-slate-200">
+      <div className=" flex wrap  " > 
 
         <NavLink to='/student/fees'>
             <div className="bg-slate-100 rounded-md text-center mr-5 py-10 px-10 mt-4">
@@ -19,7 +19,7 @@ function StudentCard01() {
         </NavLink>
       
 
-        <NavLink to='/student/registration'>
+        <NavLink to='/student/registration' >
           <div className="bg-slate-100 rounded-md text-center box-border px-10  mr-5 mt-4 mb-4">
             <div className="flex flex-col  py-10 ">
 
@@ -36,19 +36,19 @@ function StudentCard01() {
 {/* <NavLink className='my-auto' to='/student/registration'>
                         <div className="text-3xl font-bold  mr-2 ">REGISTRATION</div>
                     </NavLink> */}
-      <div>
+        <div  className='flex wrap  '>
 
-        <NavLink to='/student/hostel'>
-          <div className="bg-slate-100 rounded-md text-center mr-5 py-10 px-10 mt-4">
+        <NavLink to='/student/hostel' >
+            <div className="bg-slate-100 rounded-md text-center mr-5 py-10 px-10 mt-4">
 
-          <div className="flex flex-col h-full">
+            <div className="flex flex-col h-full">
 
-            <h3 className="text-lg font-semibold text-slate-800 mb-1">Hostel:</h3>
-            <div className="text-sm">Please click on the button and follow the instruction to book hostel</div>
+              <h3 className="text-lg font-semibold text-slate-800 mb-1">Hostel:</h3>
+              <div className="text-sm">Please click on the button and follow the instruction to book hostel</div>
+            </div>
+
+
           </div>
-
-
-        </div>
         </NavLink>
         
 
