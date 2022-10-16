@@ -1,0 +1,79 @@
+[
+    {"blockname": "Block One",
+    "roomdata" : [
+                    {
+                        "Room_no" : "Room 1",
+                        "Status" : "Available"
+                    },
+
+                    {
+                        "Room_no" : "Room 2",
+                        "Status" : "Available"
+                    },
+
+                    {
+                        "Room_no" : "Room 3",
+                        "Status" : "Available"
+                    }
+                ]
+    },
+
+    {"blockname": "Block Two",
+    "roomdata" : [
+                    {
+                        "Room_no" : "Room 1",
+                        "Status" : "Available"
+                    },
+
+                    {
+                        "Room_no" : "Room 2",
+                        "Status" : "Available"
+                    },
+
+                    {
+                        "Room_no" : "Room 3",
+                        "Status" : "Available"
+                    }
+                ]
+    },
+
+    {"blockname": "Block Three",
+    "roomdata" : [
+                    {
+                        "Room_no" : "Room 1",
+                        "Status" : "Available"
+                    },
+
+                    {
+                        "Room_no" : "Room 2",
+                        "Status" : "Available"
+                    },
+
+                    {
+                        "Room_no" : "Room 3",
+                        "Status" : "Available"
+                    }
+                ]
+    },
+
+    {"blockname": "Block Four",
+    "roomdata" : [
+                    {
+                        "Room_no" : "Room 1",
+                        "Status" : "Available"
+                    },
+
+                    {
+                        "Room_no" : "Room 2",
+                        "Status" : "Available"
+                    },
+
+                    {
+                        "Room_no" : "Room 3",
+                        "Status" : "Available"
+                    }
+                ]
+    }
+
+] 
+
