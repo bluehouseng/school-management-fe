@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Routes,Route, useLocation,} from 'react-router-dom';
+import { Routes, Route, useLocation, } from 'react-router-dom';
 
 import './css/style.scss';
 
@@ -9,7 +9,7 @@ import PageRoutes, { general } from './pages';
 function App() {
   const user = {
     isAdmin: false,
-    role: 'isAdmin'
+    role: 'student'
   };
 
   const renderRoute = {
