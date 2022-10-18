@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import LecturerProfile from './LecturerProfile';
 
 // import LecturersSidebar from './LecturersSidebar';
 // import Header from '../../partials/Header';
@@ -22,12 +23,15 @@ import React, { useState } from 'react';
 
 function LecturerDashboard() {
 
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(false);a
 
   return (
+  <div>
    <h2>
     love
    </h2>
+    <LecturerProfile/></div>
+  
   );
 }
 
