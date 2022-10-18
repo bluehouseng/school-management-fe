@@ -71,6 +71,4 @@ export default Object.freeze({
   studentHostel: "/student/hostel",
   according: "/component/accordion",
   icons: "/component/icons",
-  lecturerDashboard: "/lecturer/lecturerDashboard",
-  lecturerProfile: "/lecturer/lecturerProfile",
 });
