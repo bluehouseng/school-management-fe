@@ -68,16 +68,8 @@ function LecturerDashboard() {
             {/* Cards */}
             <div className=" flex justify-between ">
 
-              <div >
-               <select id="country" className="form-select">
-                    <option>Biology</option>
-                    <option>English</option>
-                    <option>Mathematics</option>
-                  </select> 
-              </div>
-            
-
-            <div >
+            <div className='flex' >
+              <div>
                  <form className="relative">
               <label htmlFor="feed-search-desktop" className="sr-only">
                 Search
@@ -95,6 +87,20 @@ function LecturerDashboard() {
               </button>
             </form>
             </div>
+            <div >
+               <select id="country" className="form-select">
+                    <option>Biology</option>
+                    <option>English</option>
+                    <option>Mathematics</option>
+                  </select> 
+              </div>
+            </div>
+
+
+              
+            
+
+           
            
             
             <div >

@@ -74,16 +74,16 @@ function StudentFees() {
             <div className="flex justify-center mb-6">
               <div className="relative flex w-full p-1 bg-slate-50 rounded">
                 <span className="absolute inset-0 m-1 pointer-events-none" aria-hidden="true">
-                  <span className={`absolute inset-0 w-1/2 bg-white rounded border border-slate-200 shadow-sm transform transition duration-150 ease-in-out ${card ? 'translate-x-0' : 'translate-x-full'}`}></span>
+                  {/* <span className={`absolute inset-0 w-1/2 bg-white rounded border border-slate-200 shadow-sm transform transition duration-150 ease-in-out ${card ? 'translate-x-0' : 'translate-x-full'}`}></span> */}
                 </span>
                 <button
-                  className="relative flex-1 text-sm font-medium p-1 duration-150 ease-in-out"
-                  onClick={(e) => { e.preventDefault(); setCard(true); }}
+                  className="relative flex-1 text-sm font-medium p-1"
+                  // onClick={(e) => { e.preventDefault(); setCard(true); }}
                 >Pay With Card</button>
-                <button
+                {/* <button
                   className="relative flex-1 text-sm font-medium p-1 duration-150 ease-in-out"
                   onClick={(e) => { e.preventDefault(); setCard(false); }}
-                >Pay With PayPal</button>
+                >Pay With PayPal</button> */}
               </div>
             </div>
 
@@ -113,17 +113,17 @@ function StudentFees() {
                     <input id="card-name" className="form-input w-full" type="text" placeholder="John Doe" />
                   </div>
                   {/* Email */}
-                  <div>
+                  {/* <div>
                     <label className="block text-sm font-medium mb-1" htmlFor="card-email">Email <span className="text-rose-500">*</span></label>
                     <input id="card-email" className="form-input w-full" type="email" placeholder="john@company.com" />
-                  </div>
+                  </div> */}
                 </div>
                 {/* htmlForm footer */}
                 <div className="mt-6">
                   <div className="mb-4">
-                    <button className="btn w-full bg-indigo-500 hover:bg-indigo-600 text-white" href="#0">Pay $253.00</button>
+                    <button className="btn w-full bg-indigo-500 hover:bg-indigo-600 text-white" href="#0">Pay #25000</button>
                   </div>
-                  <div className="text-xs text-slate-500 italic text-center">You'll be charged $253, including $48 htmlFor VAT in Italy</div>
+                  <div className="text-xs text-slate-500 italic text-center">All payment made are not refundable</div>
                 </div>
               </div>
             }

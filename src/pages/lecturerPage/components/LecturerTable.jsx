@@ -9,14 +9,14 @@ const LecturerTable = () => {
         <th className="p-2 whitespace-nowrap">
           <div className="font-semibold text-left">id</div>
         </th>
-        <th className="p-2 whitespace-nowrap">
-          <div className="font-semibold text-left">fullname</div>
+        <th className="p-2 whitespace-nowrap ml-14">
+          <div className="font-semibold text-left  ml-12 ">fullname</div>
         </th>
         <th className="p-2 whitespace-nowrap">
           <div className="font-semibold text-left">Department</div>
         </th>
         <th className="p-2 whitespace-nowrap">
-          <div className="font-semibold text-center">Cousre</div>
+          <div className="font-semibold text-center">Course</div>
         </th>
         <th className="p-2 whitespace-nowrap">
           <div className="font-semibold text-center">Course Code</div>
@@ -28,7 +28,7 @@ const LecturerTable = () => {
           <div className="font-semibold text-left">Level</div>
         </th>
         <th className="p-2 whitespace-nowrap">
-          <div className="font-semibold text-left">View Profil</div>
+          <div className="font-semibold text-left">View Profile</div>
         </th>
         <th className="p-2 whitespace-nowrap">
           <div className="font-semibold text-left">Input Grade</div>
@@ -53,7 +53,7 @@ const LecturerTable = () => {
         </td>
         <td className="p-2 whitespace-nowrap">
           <div className="flex shrink-0 -space-x-3 ml-5">
-            Phy
+          Gabriel chris andre
           </div>
         </td>
         <td className="p-2 whitespace-nowrap">
@@ -63,16 +63,16 @@ const LecturerTable = () => {
           </div>
         </td>
         <td className="p-2 whitespace-nowrap">
-          <div className="mx-14 text-md text-center">Mr Dung</div>
+          <div className="mx-14 text-md text-center">Maths</div>
         </td>
         <td className="p-2 whitespace-nowrap">
-          <div className="text-sm text-white rounded-md text-center bg-green-400">Null</div>
+          <div className="text-sm text-white rounded-md text-center text-black">mth</div>
         </td>
         <td className="p-2 whitespace-nowrap">
           <div className=" mx-14 text-lg text-center">4</div>
         </td>
         <td className="p-2 whitespace-nowrap">
-          <div className="text-left font-medium mr-3 text-emerald-500">100</div>
+          <div className="text-left font-medium mr-3 ">100</div>
         </td>
         <td className="p-2 whitespace-nowrap">
           <div className="text-left font-medium mr-2 ml-3 text-emerald-500">View</div>
@@ -95,7 +95,7 @@ const LecturerTable = () => {
         </td>
         <td className="p-2 whitespace-nowrap">
           <div className="flex shrink-0 -space-x-3 ml-5">
-            Maths
+          John chris titus
           </div>
         </td>
         <td className="p-2 whitespace-nowrap">
@@ -105,20 +105,25 @@ const LecturerTable = () => {
           </div>
         </td>
         <td className="p-2 whitespace-nowrap">
-          <div className="mx-14 text-md text-center">Mr John</div>
+          <div className="mx-14 text-md text-center">English</div>
         </td>
         <td className="p-2 whitespace-nowrap">
-          <div className="text-sm text-white rounded-md text-center bg-rose-400">Prerequisite</div>
+          <div className="text-sm text-white rounded-md text-center text-black ">eng</div>
         </td>
         <td className="p-2 whitespace-nowrap">
           <div className=" mx-14 text-lg text-center">4</div>
         </td>
         <td className="p-2 whitespace-nowrap">
-          <div className="text-left font-medium mr-3 text-rose-500">composary</div>
+          <div className="text-left font-medium mr-3 ">100</div>
         </td>
         <td className="p-2 whitespace-nowrap">
-          <div className="text-left font-medium text-emerald-500">
-            <input type="checkbox" className='rounded-md text-center ml-11' />
+          <div className="text-left font-medium text-emerald-500 ml-3">
+           View
+          </div>
+        </td>
+        <td className="p-2 whitespace-nowrap">
+          <div className="text-left font-medium text-emerald-500 ml-3">
+           Grade
           </div>
         </td>
       </tr>
@@ -135,7 +140,7 @@ const LecturerTable = () => {
         </td>
         <td className="p-2 whitespace-nowrap">
           <div className="flex shrink-0 -space-x-3 ml-5">
-            Eng
+            John chris andre
           </div>
         </td>
         <td className="p-2 whitespace-nowrap">
@@ -145,20 +150,25 @@ const LecturerTable = () => {
           </div>
         </td>
         <td className="p-2 whitespace-nowrap">
-          <div className="mx-14 text-md text-center">Mr Tabnan</div>
+          <div className="mx-14 text-md text-center">Biology</div>
         </td>
         <td className="p-2 whitespace-nowrap">
-          <div className="text-md text-white rounded-md text-center bg-blue-500">Non prerequisite</div>
+          <div className="text-md text-white rounded-md text-center text-black">bio</div>
         </td>
         <td className="p-2 whitespace-nowrap">
           <div className=" mx-14 text-lg text-center">2</div>
         </td>
         <td className="p-2 whitespace-nowrap">
-          <div className="text-left font-medium mr-3 text-rose-500">composary</div>
+          <div className="text-left font-medium mr-3 ">200</div>
         </td>
         <td className="p-2 whitespace-nowrap">
-          <div className="text-left font-medium text-emerald-500">
-            <input type="checkbox" className='rounded-md text-center ml-11' />
+          <div className="text-left font-medium text-emerald-500 ml-3">
+           View
+          </div>
+        </td>
+        <td className="p-2 whitespace-nowrap">
+          <div className="text-left font-medium text-emerald-500 ml-3">
+           Grade
           </div>
         </td>
       </tr>
@@ -193,14 +203,14 @@ const LecturerTable = () => {
           <div className="text-md text-white rounded-md text-center bg-rose-400"></div>
         </td>
         <td className="p-2 whitespace-nowrap">
-          <div className=" mx-14 text-lg text-center">30 unit</div>
+          <div className=" mx-14 text-lg text-center"></div>
         </td>
         <td className="p-2 whitespace-nowrap">
           <div className="text-left font-medium mr-3 text-emerald-500"></div>
         </td>
         <td className="p-2 whitespace-nowrap">
           <div className="text-left font-medium text-emerald-500">
-            Selected 5
+            
           </div>
         </td>
       </tr>

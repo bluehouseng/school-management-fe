@@ -121,7 +121,10 @@ function StudentSidebar({
                 <span className="hidden lg:block lg:sidebar-expanded:hidden 2xl:hidden text-center w-6" aria-hidden="true">
                   •••
                 </span>
-                <span className="lg:hidden lg:sidebar-expanded:block 2xl:block">Pages</span>
+                <NavLink  end
+                                to="/student/dashboard">
+                <span className="lg:hidden lg:sidebar-expanded:block 2xl:block">Home</span>
+                </NavLink>
               </h3>
               <ul className="mt-3">
                 {/* Dashboard */}
@@ -155,9 +158,11 @@ function StudentSidebar({
                                   d="M12 15c-1.654 0-3-1.346-3-3 0-.462.113-.894.3-1.285L6 6l4.714 3.301A2.973 2.973 0 0112 9c1.654 0 3 1.346 3 3s-1.346 3-3 3z"
                                 />
                               </svg>
+                              
                               <span className="text-md font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
                                 Dashboard
                               </span>
+                            
                             </div>
                             {/* Icon */}
                             <div className="flex shrink-0 ml-2">
@@ -183,7 +188,7 @@ function StudentSidebar({
                                 <div className='flex items-center' >
                                   <div className='text-blue-700 text-4xl ml-2 font-bold mr-2'>
 
-                                    <AppWindow size={24} />
+                                    {/* <AppWindow size={24} /> */}
 
                                   </div>
                                   <span className="text-md font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
@@ -201,7 +206,9 @@ function StudentSidebar({
                                 }
                               >
                                 <div className='flex items-center'>
-                                  <div className='text-blue-700 text-4xl ml-2 font-bold mr-2'><BiBookmarkAlt /></div>
+                                  <div className='text-blue-700 text-4xl ml-2 font-bold mr-2'>
+                                    {/* <BiBookmarkAlt /> */}
+                                  </div>
                                   <span className="text-md font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
                                     Check result
                                   </span>
@@ -220,7 +227,9 @@ function StudentSidebar({
                               >
 
                                 <div className='flex items-center'>
-                                  <div className='text-blue-700 text-4xl ml-2 font-bold mr-2'><MdPayment /></div>
+                                  <div className='text-blue-700 text-4xl ml-2 font-bold mr-2'>
+                                    {/* <MdPayment /> */}
+                                    </div>
                                   <span className="text-md font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
                                     Fees
                                   </span>
@@ -237,7 +246,9 @@ function StudentSidebar({
                                 }
                               >
                                 <div className='flex items-center'>
-                                  <div className='text-blue-700 text-4xl ml-2 font-bold mr-2'><CgTranscript /></div>
+                                  <div className='text-blue-700 text-4xl ml-2 font-bold mr-2'>
+                                    {/* <CgTranscript /> */}
+                                    </div>
                                   <span className="text-md font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
                                     Transcript
                                   </span>
@@ -256,7 +267,7 @@ function StudentSidebar({
 
                                 <div className='flex items-center'>
                                   <div className='text-blue-700 text-4xl ml-2 font-bold mr-2'>
-                                    <MdAppRegistration />
+                                    {/* <MdAppRegistration /> */}
                                   </div>
                                   <span className="text-md font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
                                     Registration
