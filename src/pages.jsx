@@ -1,3 +1,4 @@
+import React from 'react';
 
 import Dashboard from './pages/Dashboard';
 import Analytics from './pages/Analytics';
@@ -71,6 +72,7 @@ import StudentCheckResult from './pages/studentDashboard/StudentCheckResult';
 import StudentTranscript from './pages/studentDashboard/StudentTranscript';
 import StudentRegistration from './pages/studentDashboard/StudentRegistration';
 import StudentHostel from './pages/studentDashboard/StudentHostel';
+import LecturerDashboard from './pages/lecturerPage/LecturerDashboard';
 // import Transactions from './pages/finance/Transactions';
 import routes from './routes';
 
@@ -146,9 +148,10 @@ const pages = [
     { path: routes.studentCheckResult, element: <StudentCheckResult /> },
     { path: routes.studentTranscript, element: <StudentTranscript /> },
     { path: routes.studentRegistration, element: <StudentRegistration /> },
-    { path: routes.studentHostel, element: <StudentHostel/> },
+    { path: routes.studentHostel, element: <StudentHostel /> },
+    {path:  routes.lecturerDashboard, element: <LecturerDashboard />},
     // { path: '/', element: < /> },
-    
+
 ];
 
 const student = [
@@ -160,12 +163,15 @@ const student = [
     { path: routes.studentCheckResult, element: <StudentCheckResult /> },
     { path: routes.studentTranscript, element: <StudentTranscript /> },
     { path: routes.studentRegistration, element: <StudentRegistration /> },
-    { path: routes.studentHostel, element: <StudentHostel/> },
+    { path: routes.studentHostel, element: <StudentHostel /> },
 ]
 
 const hod = [
     { path: '/', element: <h1>HOD Dashboard</h1> },
     { path: routes.signin, element: <Signin /> },
+]
+const lecturer = [
+   {path:  routes.lecturerDashboard, element: <LecturerDashboard />},
 ]
 
 const accountant = [
@@ -191,4 +197,4 @@ export const general = () => {
 }
 
 
-export default { pages, student, hod, registrar, loggedOut, accountant }
+export default { pages, student, hod, registrar, loggedOut, accountant, lecturer }
