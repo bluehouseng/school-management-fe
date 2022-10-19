@@ -1,0 +1,77 @@
+[
+  {
+    "blockName": "Block One",
+    "roomData": [
+      {
+        "Room_no": "Room 1",
+        "Status": "Available"
+      },
+
+      {
+        "Room_no": "Room 2",
+        "Status": "Available"
+      },
+      {
+        "Room_no": "Room 3",
+        "Status": "Available"
+      }
+    ]
+  },
+  {
+    "blockName": "Block Two",
+    "roomData": [
+      {
+        "Room_no": "Room 1",
+        "Status": "Available"
+      },
+
+      {
+        "Room_no": "Room 2",
+        "Status": "Available"
+      },
+
+      {
+        "Room_no": "Room 3",
+        "Status": "Available"
+      }
+    ]
+  },
+  {
+    "blockName": "Block Three",
+    "roomData": [
+      {
+        "Room_no": "Room 1",
+        "Status": "Available"
+      },
+
+      {
+        "Room_no": "Room 2",
+        "Status": "Available"
+      },
+
+      {
+        "Room_no": "Room 3",
+        "Status": "Available"
+      }
+    ]
+  },
+  {
+    "blockName": "Block Four",
+    "roomData": [
+      {
+        "Room_no": "Room 1",
+        "Status": "Available"
+      },
+
+      {
+        "Room_no": "Room 2",
+        "Status": "Available"
+      },
+
+      {
+        "Room_no": "Room 3",
+        "Status": "Available"
+      }
+    ]
+  }
+]
