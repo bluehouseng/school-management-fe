@@ -37,8 +37,13 @@ function StudentDashboard() {
         <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
 
         <main>
+
+          <div className="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-9xl mx-auto">
+            <StudentHeader title={"Here is an update of your school work:"} />
+
           <div className="px-4  w-full  mx-auto">
-            <StudentHeader />
+            
+
             <StudentAnalytics/>
             <div className="sm:flex sm:justify-between sm:items-center mb-8">
             </div>
