@@ -4,7 +4,8 @@ import StudentSidebar from './StudentSidebar';
 import Header from '../../partials/Header';
 import StudentAnalytics from './StudentAnalytics';
 // import WelcomeBanner from '../../partials/dashboard/WelcomeBanner';
-import DashboardAvatars from '../../partials/dashboard/DashboardAvatars';
+import DashboardAvatars from '../../partials/dashboard/DashboardAvatars'; 
+
 import FilterButton from '../../components/DropdownFilter';
 import Datepicker from '../../components/Datepicker';
 import StudentCard01 from './StudentCard/StudentCard01';
