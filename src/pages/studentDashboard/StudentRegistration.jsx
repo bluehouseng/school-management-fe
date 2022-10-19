@@ -26,7 +26,7 @@ function StudentRegistration() {
         <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
 
         <main>
-          <div>
+          <div className='mx-7'>
             <div className="col-span-full bg-white shadow-lg rounded-sm border mt-3 border-slate-200">
               <header className="px-5 py-4 border-b border-slate-100">
                 <h2 className="font-semibold text-slate-800 text-2xl">Welcome John, <div> please select the courses to register</div></h2>
@@ -34,7 +34,7 @@ function StudentRegistration() {
               <div className="p-3">
 
                 {/* Table */}
-                <div className="overflow-x-auto">
+                <div className="overflow-x-auto mt-11 flex flex-col">
                   <table className="table-auto w-full">
                     {/* Table header */}
                     <thead className="text-xs uppercase text-slate-400 bg-slate-50 rounded-sm">
@@ -594,11 +594,13 @@ function StudentRegistration() {
 
 
                     </tbody>
-                    <div className='flex justify-end mt-15 w-full'> <button type='submit' className="btn w-full flex-end  bg-indigo-500 hover:bg-indigo-600 text-white">Submit</button></div>
+                    
 
                   </table>
 
-
+                  <div className='flex justify-end mt-7'>
+     <button type='submit' className="btn w-72 bg-indigo-500 hover:bg-indigo-600 text-white">Submit</button>
+  </div>
 
                 </div>
               </div>
