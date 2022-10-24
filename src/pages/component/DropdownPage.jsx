@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import Sidebar from '../../partials/Sidebar';
 import Header from '../../partials/Header';
+import DropdownCos from '../../components/DropdownCos';
 import DropdownClassic from '../../components/DropdownClassic';
 import DropdownFull from '../../components/DropdownFull';
 import DropdownFilter from '../../components/DropdownFilter';
@@ -47,6 +48,10 @@ function DropdownPage() {
                   {/* Start */}
                   <DropdownClassic />
                   {/* End */}
+                </div>
+
+                <div>
+                  <DropdownCos/>
                 </div>
 
                 {/* Full-width Dropdown */}
