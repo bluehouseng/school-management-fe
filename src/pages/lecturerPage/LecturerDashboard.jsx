@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import LecturerSidebar from './LecturerSidebar';
 import Header from '../../partials/Header';
 import LecturerAnalytics from './components/LecturerAnalytics';
+import LecturerWelcomeBanner from './components/LecturerWelcomeBanner';
 import WelcomeBanner from '../../partials/dashboard/WelcomeBanner';
 import DashboardAvatars from '../../partials/dashboard/DashboardAvatars';
 import FilterButton from '../../components/DropdownFilter';
@@ -41,7 +42,7 @@ function LecturerDashboard() {
           <div className="px-8 py-8 w-full max-w-9xl mx-auto">
 
             {/* Welcome banner */}
-            <WelcomeBanner />
+            <LecturerWelcomeBanner />
 
             {/* Dashboard actions */}
             <div className="sm:flex sm:justify-between sm:items-center mb-8">
