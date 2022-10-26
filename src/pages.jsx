@@ -75,6 +75,7 @@ import StudentHostel from './pages/studentDashboard/StudentHostel';
 import LecturerDashboard from './pages/lecturerPage/LecturerDashboard';
 // import Transactions from './pages/finance/Transactions';
 import AdminDashboard from './pages/adminPage/AdminDashboard';
+import HodDashboard from './pages/hodPage/HodDashboard';
 import routes from './routes';
 
 const pages = [
@@ -152,6 +153,7 @@ const pages = [
     { path: routes.studentHostel, element: <StudentHostel /> },
     {path:  routes.lecturerDashboard, element: <LecturerDashboard />},
     {path:  routes.adminDashbaord, element: <AdminDashboard />},
+    {path:  routes.hodDashbaord, element: <HodDashboard />},
     // { path: '/', element: < /> },
 
 ];
@@ -169,8 +171,9 @@ const student = [
 ]
 
 const hod = [
-    { path: '/', element: <h1>HOD Dashboard</h1> },
+   
     { path: routes.signin, element: <Signin /> },
+    {path:  routes.hodDashbaord, element: <HodDashboard />},
 ]
 const lecturer = [
    {path:  routes.lecturerDashboard, element: <LecturerDashboard />},
