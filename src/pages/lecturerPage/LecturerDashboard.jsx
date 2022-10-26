@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import LecturerSidebar from './LecturerSidebar';
 import Header from '../../partials/Header';
+import LecturerAnalytics from './components/LecturerAnalytics';
 import WelcomeBanner from '../../partials/dashboard/WelcomeBanner';
 import DashboardAvatars from '../../partials/dashboard/DashboardAvatars';
 import FilterButton from '../../components/DropdownFilter';
@@ -46,21 +47,16 @@ function LecturerDashboard() {
             <div className="sm:flex sm:justify-between sm:items-center mb-8">
 
               {/* Left: Avatars */}
-              <DashboardAvatars />
+           <LecturerAnalytics />
 
               {/* Right: Actions */}
               <div className="grid grid-flow-col sm:auto-cols-max justify-start sm:justify-end gap-2">
                 {/* Filter button */}
-                <FilterButton align="right" />
+               
                 {/* Datepicker built with flatpickr */}
                
                 {/* Add view button */}
-                <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white">
-                  <svg className="w-4 h-4 fill-current opacity-50 shrink-0" viewBox="0 0 16 16">
-                    <path d="M15 7H9V1c0-.6-.4-1-1-1S7 .4 7 1v6H1c-.6 0-1 .4-1 1s.4 1 1 1h6v6c0 .6.4 1 1 1s1-.4 1-1V9h6c.6 0 1-.4 1-1s-.4-1-1-1z" />
-                  </svg>
-                  <span className="hidden xs:block ml-2">Add View</span>
-                </button>                
+               
               </div>
 
             </div>
@@ -68,16 +64,8 @@ function LecturerDashboard() {
             {/* Cards */}
             <div className=" flex justify-between ">
 
-              <div >
-               <select id="country" className="form-select">
-                    <option>Biology</option>
-                    <option>English</option>
-                    <option>Mathematics</option>
-                  </select> 
-              </div>
-            
-
-            <div >
+<div  className='flex'>
+   
                  <form className="relative">
               <label htmlFor="feed-search-desktop" className="sr-only">
                 Search
@@ -94,11 +82,26 @@ function LecturerDashboard() {
                 </svg>
               </button>
             </form>
-            </div>
+          
+              <div className='ml-2' >
+               <select id="country" className="form-select">
+                    <option>Biology</option>
+                    <option>English</option>
+                    <option>Mathematics</option>
+                  </select> 
+              </div>
+</div>
            
             
-            <div >
+
+           
+           
+            
+            <div  className='flex'>
                  <Datepicker align="right" />
+                 <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white ml-3">
+                  <span className="hidden xs:block ml-2">View profile -&gt; </span>
+                </button>                
             </div>
          
 

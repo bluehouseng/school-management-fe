@@ -31,14 +31,15 @@ const LecturerAnalytics = () => {
                           </svg>
                         </div>
                         {/* Content */}
-                        <h3 className="text-lg font-semibold text-slate-800 mb-1">Getting Started</h3>
-                        <div className="text-sm">Lorem ipsum dolor sit consectetur adipiscing elit sed do.</div>
+                        <h3 className="text-lg font-semibold text-slate-800 mb-1">Assigned courses</h3>
+                        <div className="text-sm">Lorem ipsum dolor sit consectetur adipiscing elit sed...</div>
+                        <h2 className="text-xlg font-semibold text-slate-800 mb-1">3</h2>
                       </div>
                       {/* Link */}
                       <div>
-                        <a className="text-sm font-medium text-indigo-500 hover:text-indigo-600" href="#0">
+                        {/* <a className="text-sm font-medium text-indigo-500 hover:text-indigo-600" href="#0">
                           Explore -&gt;
-                        </a>
+                        </a> */}
                       </div>
                     </div>
                   </div>
@@ -72,14 +73,15 @@ const LecturerAnalytics = () => {
                           </svg>
                         </div>
                         {/* Content */}
-                        <h3 className="text-lg font-semibold text-slate-800 mb-1">Getting Started</h3>
+                        <h3 className="text-lg font-semibold text-slate-800 mb-1">Number of Students</h3>
                         <div className="text-sm">Lorem ipsum dolor sit consectetur adipiscing elit sed do.</div>
+                        <h2 className="text-xlg font-semibold text-slate-800 mb-1">39</h2>
                       </div>
                       {/* Link */}
                       <div>
-                        <a className="text-sm font-medium text-indigo-500 hover:text-indigo-600" href="#0">
+                        {/* <a className="text-sm font-medium text-indigo-500 hover:text-indigo-600" href="#0">
                           Explore -&gt;
-                        </a>
+                        </a> */}
                       </div>
                     </div>
                   </div>
@@ -114,14 +116,14 @@ const LecturerAnalytics = () => {
                           </svg>
                         </div>
                         {/* Content */}
-                        <h3 className="text-lg font-semibold text-slate-800 mb-1">Getting Started</h3>
-                        <div className="text-sm">Lorem ipsum dolor sit consectetur adipiscing elit sed do.</div>
+                        <h3 className="text-lg font-semibold text-slate-800 mb-1">Grade student</h3>
+                        <div className="text-sm">Lorem ipsum dolor sit consectetur adipiscing elit sed do.</div> <a className="text-sm font-medium text-indigo-500 hover:text-indigo-600" href="#0">
+                          click here -&gt;
+                        </a>
                       </div>
                       {/* Link */}
                       <div>
-                        <a className="text-sm font-medium text-indigo-500 hover:text-indigo-600" href="#0">
-                          Explore -&gt;
-                        </a>
+                       
                       </div>
                     </div>
                   </div>

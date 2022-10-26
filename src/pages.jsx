@@ -74,6 +74,7 @@ import StudentRegistration from './pages/studentDashboard/StudentRegistration';
 import StudentHostel from './pages/studentDashboard/StudentHostel';
 import LecturerDashboard from './pages/lecturerPage/LecturerDashboard';
 // import Transactions from './pages/finance/Transactions';
+import AdminDashboard from './pages/adminPage/AdminDashboard';
 import routes from './routes';
 
 const pages = [
@@ -150,6 +151,7 @@ const pages = [
     { path: routes.studentRegistration, element: <StudentRegistration /> },
     { path: routes.studentHostel, element: <StudentHostel /> },
     {path:  routes.lecturerDashboard, element: <LecturerDashboard />},
+    {path:  routes.adminDashbaord, element: <AdminDashboard />},
     // { path: '/', element: < /> },
 
 ];
