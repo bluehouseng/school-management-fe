@@ -17,10 +17,10 @@ const HodTable = () => {
           <div className="font-semibold text-left ml-3">Position</div>
         </th>
         <th className="p-2 whitespace-nowrap">
-          <div className="font-semibold text-center">Cous</div>
+          <div className="font-semibold text-center">Course</div>
         </th>
         <th className="p-2 whitespace-nowrap">
-          <div className="font-semibold text-center">Course Cod</div>
+          <div className="font-semibold text-center">Course Code</div>
         </th>
         <th className="p-2 whitespace-nowrap">
           <div className="font-semibold text-center">unit</div>
@@ -37,7 +37,7 @@ const HodTable = () => {
       </tr>
     </thead>
     {/* Table body */}
-    <tbody className="text-sm divide-y divide-slate-100 bg-slate-800 ">
+    <tbody className="text-sm divide-y divide-slate-100 ">
       {/* Row */}
   
       {/* Row */}
@@ -49,22 +49,22 @@ const HodTable = () => {
             <div className="shrink-0 rounded-full mr-3 sm:mr-3 bg-indigo-500">
 
             </div>
-            <div className="font-medium text-slate-800">1</div>
+            <div className="font-medium text-black">1</div>
           </div>
         </td>
         <td className="p-2 whitespace-nowrap">
-          <div className="flex shrink-0 -space-x-3 ml-5">
+          <div className="flex shrink-0 -space-x-3 ml-5 text-black">
           John smilga
           </div>
         </td>
         <td className="p-2 whitespace-nowrap">
           <div className="flex items-center ml-4">
 
-            <div>Physics</div>
+            <div className='text-black'>Physics</div>
           </div>
         </td>
         <td className="p-2 whitespace-nowrap">
-          <div className="mx-14 text-md text-center">Agricultural</div>
+          <div className="mx-14 text-md text-center text-black">Agricultural</div>
         </td>
         <td className="p-2 whitespace-nowrap">
           <div className="text-sm text-black rounded-md text-center ">Arg222</div>
@@ -79,7 +79,8 @@ const HodTable = () => {
           <div className="text-left font-medium mr-2 ml-4 text-emerald-500">View</div>
         </td>
         <td className="p-2 whitespace-nowrap">
-          <div className="text-left font-medium mr-2 ml-4 text-blue-600">Grade</div>
+          <div className="text-left font-medium mr-2 ml-4 text-black">Assign </div>
+          <div className='border-2 border-b-yellow-900 border-t-transparent border-x-transparent '></div>
         </td>
         
       </tr>
@@ -91,25 +92,25 @@ const HodTable = () => {
             <div className="shrink-0 rounded-full mr-3 sm:mr-3 bg-indigo-500">
 
             </div>
-            <div className="font-medium text-slate-800">2</div>
+            <div className="font-medium text-black">2</div>
           </div>
         </td>
         <td className="p-2 whitespace-nowrap">
-          <div className="flex shrink-0 -space-x-3 ml-5">
+          <div className="flex shrink-0 -space-x-3 ml-5 text-black">
             Timothy linus
           </div>
         </td>
         <td className="p-2 whitespace-nowrap">
           <div className="flex items-center ml-4">
 
-            <div>Mathematics</div>
+            <div className='text-black'>Mathematics</div>
           </div>
         </td>
         <td className="p-2 whitespace-nowrap">
-          <div className="mx-14 text-md text-center">Agricultural</div>
+          <div className="mx-14 text-md text-center text-black">Agricultural</div>
         </td>
         <td className="p-2 whitespace-nowrap">
-          <div className="text-sm text-black rounded-md text-center ">Arg222</div>
+          <div className="text-sm text-black rounded-md text-center  ">Arg222</div>
         </td>
         <td className="p-2 whitespace-nowrap">
           <div className=" mx-14 text-lg text-center">4</div>
@@ -123,9 +124,10 @@ const HodTable = () => {
           </div>
         </td>
         <td className="p-2 whitespace-nowrap">
-          <div className="text-left font-medium text-blue-600 ml-4">
-            Grade
+          <div className="text-left font-medium text-blue-600 ml-4 text-black">
+            Assign
           </div>
+          <div className='border-2 border-b-yellow-900 border-t-transparent border-x-transparent '></div>
         </td>
       </tr>
       {/* Row */}
@@ -136,22 +138,22 @@ const HodTable = () => {
             <div className="shrink-0 rounded-full mr-3 sm:mr-3 bg-indigo-500">
 
             </div>
-            <div className="font-medium text-slate-800">3</div>
+            <div className="font-medium text-black">3</div>
           </div>
         </td>
         <td className="p-2 whitespace-nowrap">
-          <div className="flex shrink-0 -space-x-3 ml-5">
+          <div className="flex shrink-0 -space-x-3 ml-5 text-black">
             Andrea paloma
           </div>
         </td>
         <td className="p-2 whitespace-nowrap">
           <div className="flex items-center ml-4">
 
-            <div>English</div>
+            <div className='text-black'>English</div>
           </div>
         </td>
         <td className="p-2 whitespace-nowrap">
-          <div className="mx-14 text-md text-center">Agricultural</div>
+          <div className="mx-14 text-md text-center text-black">Agricultural</div>
         </td>
         <td className="p-2 whitespace-nowrap">
           <div className="text-md text-black rounded-md text-center ">Arg222</div>
@@ -168,26 +170,20 @@ const HodTable = () => {
           </div>
         </td>
         <td className="p-2 whitespace-nowrap">
-          <div className="text-left font-medium text-blue-600 ml-4">
-          Grade
+          <div className="text-left font-medium text-blue-600 ml-4 text-black">
+          Assign
           </div>
+          <div className='border-2 border-b-yellow-900 border-t-transparent border-x-transparent '></div>
         </td>
       </tr>
       {/* Row */}
-    
-
       {/* Row */}
       
       {/* Row */}
       {/* Row */}
 
       {/* Row */}
-
-
     </tbody>
-
-    
-
   </table>
 
   <div className='flex justify-end mt-7'>
