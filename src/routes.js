@@ -72,4 +72,7 @@ export default Object.freeze({
   according: "/component/accordion",
   
   icons: "/component/icons",
+  lecturerDashboard: "/lecturer/dashboard",
+  // lecturerProfile: "/lecturer/lecturerProfile",
+
 });

@@ -16,6 +16,7 @@ function App() {
     student: PageRoutes.student.map((item, idx) => <Route key={idx} path={item.path} element={item.element} />),
     hod: PageRoutes.hod.map((item, idx) => <Route key={idx} path={item.path} element={item.element} />),
     registrar: PageRoutes.registrar.map((item, idx) => <Route key={idx} path={item.path} element={item.element} />),
+    lecturer: PageRoutes.lecturer.map((item, idx) => <Route key={idx} path={item.path} element={item.element} />),
     isAdmin: PageRoutes.pages.map((item, idx) => <Route key={idx} path={item.path} element={item.element} />)
   }
 
