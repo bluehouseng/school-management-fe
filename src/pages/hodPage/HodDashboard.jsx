@@ -4,7 +4,7 @@ import Sidebar from '../../partials/Sidebar';
 import Header from '../../partials/Header';
 import HodAnalytics from './components/HodAnalytics';
 import HodTable from './components/HodTable';
-import WelcomeBanner from '../../partials/dashboard/WelcomeBanner';
+import HodWelcomeBanner from './components/HodWelcomeBanner';
 import DashboardAvatars from '../../partials/dashboard/DashboardAvatars';
 import FilterButton from '../../components/DropdownFilter';
 import Datepicker from '../../components/Datepicker';
@@ -40,7 +40,7 @@ function HodDashboard() {
           <div className="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-9xl mx-auto">
 
             {/* Welcome banner */}
-            <WelcomeBanner />
+            <HodWelcomeBanner />
 
             {/* Dashboard actions */}
             

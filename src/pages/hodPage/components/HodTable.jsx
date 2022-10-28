@@ -78,9 +78,9 @@ const HodTable = () => {
         <td className="p-2 whitespace-nowrap">
           <div className="text-left font-medium mr-2 ml-4 text-emerald-500">View</div>
         </td>
-        <td className="p-2 whitespace-nowrap">
-          <div className="text-left font-medium mr-2 ml-4 text-black">Assign </div>
-          <div className='border-2 border-b-yellow-900 border-t-transparent border-x-transparent '></div>
+        <td className="p-2 whitespace-nowrap ">
+          <div className="text-left font-medium mr-7 text-center text-black">Assign role  <div className='border-2 border-b-yellow-900 border-t-transparent border-x-transparent '></div></div>
+        
         </td>
         
       </tr>
@@ -123,11 +123,9 @@ const HodTable = () => {
             View
           </div>
         </td>
-        <td className="p-2 whitespace-nowrap">
-          <div className="text-left font-medium text-blue-600 ml-4 text-black">
-            Assign
-          </div>
-          <div className='border-2 border-b-yellow-900 border-t-transparent border-x-transparent '></div>
+        <td className="p-2 whitespace-nowrap ">
+          <div className="text-left font-medium mr-7 text-center text-black">Assign role  <div className='border-2 border-b-yellow-900 border-t-transparent border-x-transparent '></div></div>
+        
         </td>
       </tr>
       {/* Row */}
@@ -169,11 +167,9 @@ const HodTable = () => {
           View 
           </div>
         </td>
-        <td className="p-2 whitespace-nowrap">
-          <div className="text-left font-medium text-blue-600 ml-4 text-black">
-          Assign
-          </div>
-          <div className='border-2 border-b-yellow-900 border-t-transparent border-x-transparent '></div>
+        <td className="p-2 whitespace-nowrap ">
+          <div className="text-left font-medium mr-7 text-center text-black">Assign role  <div className='border-2 border-b-yellow-900 border-t-transparent border-x-transparent '></div></div>
+        
         </td>
       </tr>
       {/* Row */}
