@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 
 import LecturerSidebar from './LecturerSidebar';
 import Header from '../../partials/Header';
 import LecturerAnalytics from './components/LecturerAnalytics';
+import LecturerWelcomeBanner from './components/LecturerWelcomeBanner';
 import WelcomeBanner from '../../partials/dashboard/WelcomeBanner';
 import DashboardAvatars from '../../partials/dashboard/DashboardAvatars';
 import FilterButton from '../../components/DropdownFilter';
@@ -22,6 +24,7 @@ import LecturerTable from './components/LecturerTable';
 // import DashboardCard11 from '../../partials/dashboard/DashboardCard11';
 
 function LecturerDashboard() {
+  const location = useLocation();
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
@@ -41,7 +44,7 @@ function LecturerDashboard() {
           <div className="px-8 py-8 w-full max-w-9xl mx-auto">
 
             {/* Welcome banner */}
-            <WelcomeBanner />
+            <LecturerWelcomeBanner />
 
             {/* Dashboard actions */}
             <div className="sm:flex sm:justify-between sm:items-center mb-8">
@@ -99,9 +102,14 @@ function LecturerDashboard() {
             
             <div  className='flex'>
                  <Datepicker align="right" />
-                 <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white ml-3">
+
+<NavLink end to='/lecturer/profile'>
+   <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white ml-3">
                   <span className="hidden xs:block ml-2">View profile -&gt; </span>
-                </button>                
+                </button>    
+</NavLink>
+
+                            
             </div>
          
 
