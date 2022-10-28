@@ -49,22 +49,22 @@ function HodDashboard() {
               {/* <DashboardAvatars /> */}
 
               {/* Right: Actions */}
-              <div className="grid grid-flow-col sm:auto-cols-max  sm:justify-between gap-2">
+              <div className="flex items-center justify-between mb-7 ">
                 {/* Filter button */}
                 {/* <FilterButton align="right" /> */}
                 {/* Datepicker built with flatpickr */}
+
+                <h3 className="text-xl leading-snug text-slate-800 font-bold mt-6 mb-5">Course Assignin category</h3>
+               
+             
                 <Datepicker align="right" />
-                {/* Add view button */}
-                <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white">
-                  <span className="hidden xs:block ml-2">View profile -&gt;</span>
-                </button>                
               </div>
 
             
 
             {/* Cards */}
             <section>
-<h3 className="text-xl leading-snug text-slate-800 font-bold mt-6 mb-5">Trending Categories</h3>
+
 <div className="grid grid-cols-12 gap-6">
   {/* Card 1 */}
   <div className="col-span-full xl:col-span-4 bg-white shadow-md rounded-sm border border-slate-200">
@@ -131,16 +131,16 @@ function HodDashboard() {
     <div className="flex flex-col h-full p-5">
       <div className="grow">
         <header>
-          <h3 className="text-lg text-slate-800 font-semibold mb-1">English</h3>
+          <h3 className="text-lg text-slate-800 font-semibold mb-1">Social studies</h3>
         </header>
       </div>
       {/* Card footer */}
       <footer className="mt-2">
         <div className="flex flex-wrap justify-between items-center">
           {/* Left side */}
-          <div className="text-sm text-rose-500 italic">Not assigned</div>
+          <div className="text-sm text-green-500 italic">Assigned</div>
           {/* Right side */}
-          <a className="text-sm font-medium text-indigo-500 hover:text-indigo-600" href="#0">Assign course -&gt;</a>
+          <a className="text-sm font-medium text-indigo-500 hover:text-indigo-600 " href="#0">Assign course -&gt;</a>
         </div>
       </footer>
     </div>
@@ -171,14 +171,14 @@ function HodDashboard() {
     <div className="flex flex-col h-full p-5">
       <div className="grow">
         <header>
-          <h3 className="text-lg text-slate-800 font-semibold mb-1">Boilogy</h3>
+          <h3 className="text-lg text-slate-800 font-semibold mb-1">Physics</h3>
         </header>
       </div>
       {/* Card footer */}
       <footer className="mt-2">
         <div className="flex flex-wrap justify-between items-center">
           {/* Left side */}
-          <div className="text-sm text-green-500 italic">Assigned</div>
+          <div className="text-sm text-rose-500 italic">Not assigned</div>
           {/* Right side */}
           <a className="text-sm font-medium text-indigo-500 hover:text-indigo-600" href="#0">Assign course -&gt;</a>
         </div>
