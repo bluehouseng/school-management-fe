@@ -6,9 +6,9 @@ import { MdPayment } from 'react-icons/md'
 import { CgTranscript } from 'react-icons/cg'
 import { MdAppRegistration } from 'react-icons/md'
 
-import SidebarLinkGroup from '../../partials/SidebarLinkGroup';
+import SidebarLinkGroup from '../../../partials/SidebarLinkGroup';
 
-function LecturesSidebar({
+function AdminSidebar({
   sidebarOpen,
   setSidebarOpen
 }) {
@@ -376,4 +376,4 @@ function LecturesSidebar({
   );
 }
 
-export default LecturesSidebar;
+export default AdminSidebar;

@@ -6,9 +6,9 @@ import { MdPayment } from 'react-icons/md'
 import { CgTranscript } from 'react-icons/cg'
 import { MdAppRegistration } from 'react-icons/md'
 
-import SidebarLinkGroup from '../../partials/SidebarLinkGroup';
+import SidebarLinkGroup from '../../../partials/SidebarLinkGroup';
 
-function LecturesSidebar({
+function HodSidebar({
   sidebarOpen,
   setSidebarOpen
 }) {
@@ -183,7 +183,7 @@ function LecturesSidebar({
                                 <div className='flex items-center' >
                                   <div className='text-blue-700 text-4xl ml-2 font-bold mr-2'>
 
-                                    <AppWindow size={24} />
+                                    {/* <AppWindow size={24} /> */}
 
                                   </div>
                                   <span className="text-md font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
@@ -201,7 +201,9 @@ function LecturesSidebar({
                                 }
                               >
                                 <div className='flex items-center'>
-                                  <div className='text-blue-700 text-4xl ml-2 font-bold mr-2'><BiBookmarkAlt /></div>
+                                  <div className='text-blue-700 text-4xl ml-2 font-bold mr-2'>
+                                    {/* <BiBookmarkAlt /> */}
+                                    </div>
                                   <span className="text-md font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
                                     Check result
                                   </span>
@@ -220,7 +222,9 @@ function LecturesSidebar({
                               >
 
                                 <div className='flex items-center'>
-                                  <div className='text-blue-700 text-4xl ml-2 font-bold mr-2'><MdPayment /></div>
+                                  <div className='text-blue-700 text-4xl ml-2 font-bold mr-2'>
+                                    {/* <MdPayment /> */}
+                                    </div>
                                   <span className="text-md font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
                                     Fees
                                   </span>
@@ -237,7 +241,9 @@ function LecturesSidebar({
                                 }
                               >
                                 <div className='flex items-center'>
-                                  <div className='text-blue-700 text-4xl ml-2 font-bold mr-2'><CgTranscript /></div>
+                                  <div className='text-blue-700 text-4xl ml-2 font-bold mr-2'>
+                                    {/* <CgTranscript /> */}
+                                    </div>
                                   <span className="text-md font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
                                     Transcript
                                   </span>
@@ -256,7 +262,7 @@ function LecturesSidebar({
 
                                 <div className='flex items-center'>
                                   <div className='text-blue-700 text-4xl ml-2 font-bold mr-2'>
-                                    <MdAppRegistration />
+                                    {/* <MdAppRegistration /> */}
                                   </div>
                                   <span className="text-md font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
                                     Registration
@@ -370,4 +376,4 @@ function LecturesSidebar({
   );
 }
 
-export default LecturersSidebar;
+export default HodSidebar;

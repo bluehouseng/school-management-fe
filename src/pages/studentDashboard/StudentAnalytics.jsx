@@ -3,7 +3,7 @@ import React from 'react'
 const StudentAnalytics = () => {
   return (  
     <div className="flex flex-wrap justify-between rounded-lg ">
-        <div className=" bg-slate-200 px-14 py-5  mt-3 rounded-lg drop-shadow-xl ">
+        <div className=" bg-slate-200 px-14 py-5  mt-3 rounded-lg l ">
              <p>Total No. of Courses</p>
             <p className='font-bold text-2x0.5'> 20</p>
         </div>

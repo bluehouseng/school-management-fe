@@ -73,8 +73,13 @@ import StudentTranscript from './pages/studentDashboard/StudentTranscript';
 import StudentRegistration from './pages/studentDashboard/StudentRegistration';
 import StudentHostel from './pages/studentDashboard/StudentHostel';
 import LecturerDashboard from './pages/lecturerPage/LecturerDashboard';
+import LecturerProfile from './pages/lecturerPage/LecturerProfile';
 // import Transactions from './pages/finance/Transactions';
+import AdminDashboard from './pages/adminPage/AdminDashboard';
+import HodDashboard from './pages/hodPage/HodDashboard';
+import HodCourses from './pages/hodPage/HodCourses';
 import routes from './routes';
+import AccountantDashboard from './pages/accountantPage/AccountantDashboard';
 
 const pages = [
     { path: routes.home, element: <Dashboard /> },
@@ -150,6 +155,11 @@ const pages = [
     { path: routes.studentRegistration, element: <StudentRegistration /> },
     { path: routes.studentHostel, element: <StudentHostel /> },
     {path:  routes.lecturerDashboard, element: <LecturerDashboard />},
+    {path:  routes.lecturerProfile, element: <LecturerProfile />},
+    {path:  routes.adminDashbaord, element: <AdminDashboard />},
+    {path:  routes.hodDashbaord, element: <HodDashboard />},
+    {path:  routes.hodCourses, element: <HodCourses />},
+    {path:  routes.accountantDashboard, element: <AccountantDashboard />},
     // { path: '/', element: < /> },
 
 ];
@@ -167,15 +177,18 @@ const student = [
 ]
 
 const hod = [
-    { path: '/', element: <h1>HOD Dashboard</h1> },
+    {path:  routes.hodCourses, element: <HodCourses />},
     { path: routes.signin, element: <Signin /> },
+    {path:  routes.hodDashbaord, element: <HodDashboard />},
 ]
 const lecturer = [
    {path:  routes.lecturerDashboard, element: <LecturerDashboard />},
+   {path:  routes.lecturerProfile, element: <LecturerProfile />},
 ]
 
+
 const accountant = [
-    { path: '/', element: <h1>Accountant Dashboard</h1> },
+    { path: routes.accountantDashboard, element: <AccountantDashboard/> },
     { path: routes.signin, element: <Signin /> },
 
 ]
