@@ -73,6 +73,7 @@ import StudentTranscript from './pages/studentDashboard/StudentTranscript';
 import StudentRegistration from './pages/studentDashboard/StudentRegistration';
 import StudentHostel from './pages/studentDashboard/StudentHostel';
 import LecturerDashboard from './pages/lecturerPage/LecturerDashboard';
+import LecturerProfile from './pages/lecturerPage/LecturerProfile';
 // import Transactions from './pages/finance/Transactions';
 import AdminDashboard from './pages/adminPage/AdminDashboard';
 import HodDashboard from './pages/hodPage/HodDashboard';
@@ -153,6 +154,7 @@ const pages = [
     { path: routes.studentRegistration, element: <StudentRegistration /> },
     { path: routes.studentHostel, element: <StudentHostel /> },
     {path:  routes.lecturerDashboard, element: <LecturerDashboard />},
+    {path:  routes.lecturerProfile, element: <LecturerProfile />},
     {path:  routes.adminDashbaord, element: <AdminDashboard />},
     {path:  routes.hodDashbaord, element: <HodDashboard />},
     {path:  routes.hodCourses, element: <HodCourses />},
@@ -179,6 +181,7 @@ const hod = [
 ]
 const lecturer = [
    {path:  routes.lecturerDashboard, element: <LecturerDashboard />},
+   {path:  routes.lecturerProfile, element: <LecturerProfile />},
 ]
 
 const accountant = [

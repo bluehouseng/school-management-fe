@@ -1,6 +1,8 @@
 import React from 'react'
+import { NavLink, useLocation } from 'react-router-dom';
 
 const HodTable = () => {
+  const location = useLocation();
   return (
     <div className='mt-11 flex flex-col bg-slate-500 p-7 rounded-sm'>
         <table className="table-auto w-full ">
@@ -32,7 +34,10 @@ const HodTable = () => {
           <div className="font-semibold text-left">View Profile</div>
         </th>
         <th className="p-2 whitespace-nowrap">
-          <div className="font-semibold text-left">Assign course</div>
+        
+             <div className="font-semibold text-left">Assign course</div>
+        
+         
         </th>
       </tr>
     </thead>
@@ -79,7 +84,10 @@ const HodTable = () => {
           <div className="text-left font-medium mr-2 ml-4 text-emerald-500">View</div>
         </td>
         <td className="p-2 whitespace-nowrap ">
-          <div className="text-left font-medium mr-7 text-center text-black">Assign role  <div className='border-2 border-b-yellow-900 border-t-transparent border-x-transparent '></div></div>
+          <NavLink end to='/hod/courses'>
+ <div className="text-left font-medium mr-7 text-center text-black">Assign role  <div className='border-2 border-b-yellow-900 border-t-transparent border-x-transparent '></div></div>
+          </NavLink>
+         
         
         </td>
         
@@ -124,7 +132,10 @@ const HodTable = () => {
           </div>
         </td>
         <td className="p-2 whitespace-nowrap ">
-          <div className="text-left font-medium mr-7 text-center text-black">Assign role  <div className='border-2 border-b-yellow-900 border-t-transparent border-x-transparent '></div></div>
+          <NavLink end to='/hod/courses'>
+<div className="text-left font-medium mr-7 text-center text-black">Assign role  <div className='border-2 border-b-yellow-900 border-t-transparent border-x-transparent '></div></div>
+          </NavLink>
+          
         
         </td>
       </tr>
@@ -168,7 +179,10 @@ const HodTable = () => {
           </div>
         </td>
         <td className="p-2 whitespace-nowrap ">
-          <div className="text-left font-medium mr-7 text-center text-black">Assign role  <div className='border-2 border-b-yellow-900 border-t-transparent border-x-transparent '></div></div>
+          <NavLink end to='/hod/courses'>
+<div className="text-left font-medium mr-7 text-center text-black">Assign role  <div className='border-2 border-b-yellow-900 border-t-transparent border-x-transparent '></div></div>
+          </NavLink>
+          
         
         </td>
       </tr>

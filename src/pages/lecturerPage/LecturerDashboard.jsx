@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 
 import LecturerSidebar from './LecturerSidebar';
 import Header from '../../partials/Header';
@@ -23,6 +24,7 @@ import LecturerTable from './components/LecturerTable';
 // import DashboardCard11 from '../../partials/dashboard/DashboardCard11';
 
 function LecturerDashboard() {
+  const location = useLocation();
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
@@ -100,9 +102,14 @@ function LecturerDashboard() {
             
             <div  className='flex'>
                  <Datepicker align="right" />
-                 <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white ml-3">
+
+<NavLink end to='/lecturer/profile'>
+   <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white ml-3">
                   <span className="hidden xs:block ml-2">View profile -&gt; </span>
-                </button>                
+                </button>    
+</NavLink>
+
+                            
             </div>
          
 
