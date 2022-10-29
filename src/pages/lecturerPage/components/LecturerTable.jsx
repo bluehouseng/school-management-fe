@@ -1,6 +1,8 @@
 import React from 'react'
+import { NavLink, useLocation } from 'react-router-dom'
 
 const LecturerTable = () => {
+  const location = useLocation()
   return (
     <div className='mt-11 flex flex-col'><table className="table-auto w-full">
     {/* Table header */}
@@ -78,7 +80,10 @@ const LecturerTable = () => {
           <div className="text-left font-medium mr-2 ml-4 text-emerald-500">View</div>
         </td>
         <td className="p-2 whitespace-nowrap">
-          <div className="text-left font-medium mr-2 ml-4 text-blue-600">Grade</div>
+          <NavLink end to='/lecturer/grading'>
+            <div className="text-left font-medium mr-2 ml-4 text-blue-600">Grade</div>
+          </NavLink>
+          
         </td>
         
       </tr>
@@ -122,9 +127,12 @@ const LecturerTable = () => {
           </div>
         </td>
         <td className="p-2 whitespace-nowrap">
-          <div className="text-left font-medium text-blue-600 ml-4">
+          <NavLink end to='/lecturer/grading'>
+             <div className="text-left font-medium text-blue-600 ml-4">
             Grade
           </div>
+          </NavLink>
+         
         </td>
       </tr>
       {/* Row */}
@@ -167,9 +175,12 @@ const LecturerTable = () => {
           </div>
         </td>
         <td className="p-2 whitespace-nowrap">
-          <div className="text-left font-medium text-blue-600 ml-4">
+          <NavLink end to='/lecturer/grading'>
+<div className="text-left font-medium text-blue-600 ml-4">
           Grade
           </div>
+          </NavLink>
+          
         </td>
       </tr>
       {/* Row */}

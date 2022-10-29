@@ -74,6 +74,7 @@ export default Object.freeze({
   icons: "/component/icons",
   lecturerDashboard: "/lecturer/dashboard",
   lecturerProfile: "/lecturer/profile",
+  lecturerGrading: "/lecturer/grading", 
   adminDashbaord: "/admin/dashboard",
   hodDashbaord: "/hod/dashboard",
   hodCourses: "/hod/courses",
