@@ -1,6 +1,8 @@
 import React from 'react'
+import { NavLink, useLocation } from 'react-router-dom';
 
 const LecturerAnalytics = () => {
+  const location = useLocation();
   return (
     <div className='flex justify-around '>
 
@@ -117,9 +119,13 @@ const LecturerAnalytics = () => {
                         </div>
                         {/* Content */}
                         <h3 className="text-lg font-semibold text-slate-800 mb-1">Grade student</h3>
-                        <div className="text-sm">Lorem ipsum dolor sit consectetur adipiscing elit sed do.</div> <a className="text-sm font-medium text-indigo-500 hover:text-indigo-600" href="#0">
+                        <div className="text-sm">Lorem ipsum dolor sit consectetur adipiscing elit sed do.</div> 
+                        <NavLink end to='/lecturer/grading'>
+                          <a className="text-sm font-medium text-indigo-500 hover:text-indigo-600" href="#0">
                           click here -&gt;
-                        </a>
+                        </a> 
+                        </NavLink>
+                       
                       </div>
                       {/* Link */}
                       <div>
