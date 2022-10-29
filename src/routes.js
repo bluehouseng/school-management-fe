@@ -78,7 +78,7 @@ export default Object.freeze({
   adminDashbaord: "/admin/dashboard",
   hodDashbaord: "/hod/dashboard",
   hodCourses: "/hod/courses",
-  accountantDashboard: "accountant/dashboard"
+  accountantDashboard: "/accountant/dashboard"
   // lecturerProfile: "/lecturer/lecturerProfile",
 
 });
