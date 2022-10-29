@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Total Lectures ",
+        "id":1
+    },
+    {
+        "name": "Total fees paid",
+        "id" : 2
+    },
+    {
+        "name":"Total registered/semester",
+        "id": 3
+    },
+    {
+        "name":"Total Amount paid",
+        "id": 4
+    }
+
+
+]

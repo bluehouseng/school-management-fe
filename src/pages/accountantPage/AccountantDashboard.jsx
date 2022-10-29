@@ -1,15 +1,15 @@
-import React from 'react'
-import AccountantHeader from './AccountantHeader'
-import Cards from './components/Cards'
+import React from "react";
+import AccountantAnalytics from "./AccountantAnalytics";
+import AccountantHeader from "./AccountantHeader";
 
 
 function AccountantDashboard() {
   return (
     <div>
-        <AccountantHeader />
-        
+      <AccountantHeader />
+      <AccountantAnalytics />
     </div>
-  )
+  );
 }
 
-export default AccountantDashboard
+export default AccountantDashboard;
