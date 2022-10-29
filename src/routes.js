@@ -70,13 +70,15 @@ export default Object.freeze({
   studentRegistration: "/student/registration",
   studentHostel: "/student/hostel",
   according: "/component/accordion",
+  
   icons: "/component/icons",
   lecturerDashboard: "/lecturer/dashboard",
   lecturerProfile: "/lecturer/profile",
   lecturerGrading: "/lecturer/grading", 
   adminDashbaord: "/admin/dashboard",
   hodDashbaord: "/hod/dashboard",
-  hodCourses: "/hod/courses"
+  hodCourses: "/hod/courses",
+  accountantDashboard: "accountant/dashboard"
   // lecturerProfile: "/lecturer/lecturerProfile",
 
 });

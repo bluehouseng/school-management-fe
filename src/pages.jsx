@@ -80,6 +80,7 @@ import AdminDashboard from './pages/adminPage/AdminDashboard';
 import HodDashboard from './pages/hodPage/HodDashboard';
 import HodCourses from './pages/hodPage/HodCourses';
 import routes from './routes';
+import AccountantDashboard from './pages/accountantPage/AccountantDashboard';
 
 const pages = [
     { path: routes.home, element: <Dashboard /> },
@@ -160,6 +161,7 @@ const pages = [
     {path:  routes.adminDashbaord, element: <AdminDashboard />},
     {path:  routes.hodDashbaord, element: <HodDashboard />},
     {path:  routes.hodCourses, element: <HodCourses />},
+    {path:  routes.accountantDashboard, element: <AccountantDashboard />},
     // { path: '/', element: < /> },
 
 ];
@@ -187,8 +189,9 @@ const lecturer = [
    {path:  routes.lecturerGrading, element: <LecturerGrading/>},
 ]
 
+
 const accountant = [
-    { path: '/', element: <h1>Accountant Dashboard</h1> },
+    { path: routes.accountantDashboard, element: <AccountantDashboard/> },
     { path: routes.signin, element: <Signin /> },
 
 ]

@@ -1,4 +1,5 @@
 import React from 'react';
+import './StudentCard.css';
 // import { Link } from 'react-router-dom';
 // import EditMenu from '../../component/DropdownPage'
 
