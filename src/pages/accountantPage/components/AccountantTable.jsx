@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 
-const LecturerTable = () => {
+const AccountantTable = () => {
   const location = useLocation()
   return (
     <div className='mt-11 flex flex-col'><table className="table-auto w-full">
@@ -210,4 +210,4 @@ const LecturerTable = () => {
   )
 }
 
-export default LecturerTable
+export default AccountantTable

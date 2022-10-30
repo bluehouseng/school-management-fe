@@ -1,13 +1,132 @@
-import React from "react";
-import AccountantAnalytics from "./AccountantAnalytics";
-import AccountantHeader from "./AccountantHeader";
+import React, { useState } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 
+import AccountantSidebar from './components/AccountantSidebar';
+import Header from '../../partials/Header';
+import AccountantWelcomeBanner from './components/AccountantWelcomeBanner';
+import AccountantAnalytics from './components/AccountantAnalytics';
+import WelcomeBanner from '../../partials/dashboard/WelcomeBanner';
+import DashboardAvatars from '../../partials/dashboard/DashboardAvatars';
+import FilterButton from '../../components/DropdownFilter';
+import Datepicker from '../../components/Datepicker';
+import AccountantTable from './components/AccountantTable';
+// import LecturerDropdown from './components/LecturerDropdown'
+// import DashboardCard01 from '../../partials/dashboard/DashboardCard01';
+// import DashboardCard02 from '../../partials/dashboard/DashboardCard02';
+// import DashboardCard03 from '../../partials/dashboard/DashboardCard03';
+// import DashboardCard04 from '../../partials/dashboard/DashboardCard04';
+// import DashboardCard05 from '../../partials/dashboard/DashboardCard05';
+// import DashboardCard06 from '../../partials/dashboard/DashboardCard06';
+// import DashboardCard07 from '../../partials/dashboard/DashboardCard07';
+// import DashboardCard08 from '../../partials/dashboard/DashboardCard08';
+// import DashboardCard09 from '../../partials/dashboard/DashboardCard09';
+// import DashboardCard10 from '../../partials/dashboard/DashboardCard10';
+// import DashboardCard11 from '../../partials/dashboard/DashboardCard11';
 
 function AccountantDashboard() {
+  const location = useLocation();
+
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
   return (
-    <div>
-      <AccountantHeader />
-      <AccountantAnalytics />
+    <div className="flex h-screen overflow-hidden">
+
+      {/* Sidebar */}
+      <AccountantSidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
+
+      {/* Content area */}
+      <div className="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
+
+        {/*  Site header */}
+        <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
+
+        <main>
+          <div className="px-8 py-8 w-full max-w-9xl mx-auto">
+
+            {/* Welcome banner */}
+            <AccountantWelcomeBanner />
+
+            {/* Dashboard actions */}
+            <div className="sm:flex sm:justify-between sm:items-center mb-8">
+
+              {/* Left: Avatars */}
+           <AccountantAnalytics />
+
+              {/* Right: Actions */}
+              <div className="grid grid-flow-col sm:auto-cols-max justify-start sm:justify-end gap-2">
+                {/* Filter button */}
+               
+                {/* Datepicker built with flatpickr */}
+               
+                {/* Add view button */}
+               
+              </div>
+
+            </div>
+
+            {/* Cards */}
+            <div className=" flex justify-between ">
+
+<div  className='flex'>
+   
+                 {/* <form className="relative">
+              <label htmlFor="feed-search-desktop" className="sr-only">
+                Search
+              </label>
+              <input id="feed-search-desktop" className="form-input w-full pl-9 focus:border-slate-300" type="search" placeholder="Search…" />
+              <button className="absolute inset-0 right-auto group" type="submit" aria-label="Search">
+                <svg
+                  className="w-4 h-4 shrink-0 fill-current text-slate-400 group-hover:text-slate-500 ml-3 mr-2"
+                  viewBox="0 0 16 16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 14c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7zM7 2C4.243 2 2 4.243 2 7s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5z" />
+                  <path d="M15.707 14.293L13.314 11.9a8.019 8.019 0 01-1.414 1.414l2.393 2.393a.997.997 0 001.414 0 .999.999 0 000-1.414z" />
+                </svg>
+              </button>
+            </form>
+           */}
+              {/* <div className='ml-2' >
+               <select id="country" className="form-select">
+                    <option>Biology</option>
+                    <option>English</option>
+                    <option>Mathematics</option>
+                  </select> 
+              </div> */}
+</div>
+           
+            
+
+           
+           
+            
+            <div  className='flex'>
+                 <Datepicker align="right" />
+
+<NavLink end to='/lecturer/profile'>
+   <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white ml-3">
+                  <span className="hidden xs:block ml-2">View profile -&gt; </span>
+                </button>    
+</NavLink>
+
+                            
+            </div>
+         
+
+
+              {/* Line chart (Acme Plus) */}
+              {/* <DashboardCard01 /> */}
+             
+              
+            </div>
+
+            {/* <AccountantTable /> */}
+
+          </div>
+        </main>
+
+      </div>
+
     </div>
   );
 }
