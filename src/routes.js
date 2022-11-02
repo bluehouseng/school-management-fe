@@ -62,6 +62,7 @@ export default Object.freeze({
   badge: "/component/badge",
   avatar: "/component/avatar",
   tooltip: "/component/tooltip",
+
   studentDashboard: "/student/dashboard",
   studentCourses: "/student/courses",
   studentFees: "/student/fees",
@@ -78,6 +79,7 @@ export default Object.freeze({
   adminDashbaord: "/admin/dashboard",
   hodDashbaord: "/hod/dashboard",
   hodCourses: "/hod/courses",
+  numberOfStudents: "/number/students",
   accountantDashboard: "/accountant/dashboard"
   // lecturerProfile: "/lecturer/lecturerProfile",
 

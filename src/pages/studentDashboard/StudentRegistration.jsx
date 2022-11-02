@@ -92,13 +92,13 @@ function StudentRegistration() {
                           <div className="mx-14 text-md text-center">Mr John</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
-                          <div className="text-md text-white rounded-md text-center bg-rose-400">Prerequisite</div>
+                          <div className="text-md text-black rounded-md text-center ">Prerequisite</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
                           <div className=" mx-14 text-lg text-center">4</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
-                          <div className="text-left font-medium mr-3 text-rose-500">composary</div>
+                          <div className="text-left font-medium mr-3 text-rose-500">compulsory</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
                           <div className="text-left font-medium text-emerald-500">
@@ -132,7 +132,7 @@ function StudentRegistration() {
                           <div className="mx-14 text-md text-center">Mr Dung</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
-                          <div className="text-md text-white rounded-md text-center bg-green-400">Null</div>
+                          <div className="text-md text-black rounded-md text-center ">Null</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
                           <div className=" mx-14 text-lg text-center">4</div>
@@ -172,13 +172,13 @@ function StudentRegistration() {
                           <div className="mx-14 text-md text-center">Mr John</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
-                          <div className="text-md text-white rounded-md text-center bg-rose-400">Prerequisite</div>
+                          <div className="text-md text-black rounded-md text-center ">Prerequisite</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
                           <div className=" mx-14 text-lg text-center">4</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
-                          <div className="text-left font-medium mr-3 text-rose-500">composary</div>
+                          <div className="text-left font-medium mr-3 text-rose-500">compulsory</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
                           <div className="text-left font-medium text-emerald-500">
@@ -212,13 +212,13 @@ function StudentRegistration() {
                           <div className="mx-14 text-md text-center">Mr Tabnan</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
-                          <div className="text-md text-white rounded-md text-center bg-blue-500">Non prerequisite</div>
+                          <div className="text-md text-black rounded-md text-center ">Non prerequisite</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
                           <div className=" mx-14 text-lg text-center">2</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
-                          <div className="text-left font-medium mr-3 text-rose-500">composary</div>
+                          <div className="text-left font-medium mr-3 text-rose-500">compulsory</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
                           <div className="text-left font-medium text-emerald-500">
@@ -252,13 +252,13 @@ function StudentRegistration() {
                           <div className="mx-14 text-md text-center">Mr Collins</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
-                          <div className="text-md text-white rounded-md text-center bg-rose-400">Prerequisite</div>
+                          <div className="text-md text-black rounded-md text-center ">Prerequisite</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
                           <div className=" mx-14 text-lg text-center">2</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
-                          <div className="text-left font-medium mr-3 text-rose-500">composary</div>
+                          <div className="text-left font-medium mr-3 text-rose-500">compulsory</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
                           <div className="text-left font-medium text-emerald-500">
@@ -292,7 +292,7 @@ function StudentRegistration() {
                           <div className="mx-14 text-md text-center">Mr Mallum</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
-                          <div className="text-md text-white rounded-md text-center bg-green-400">Null</div>
+                          <div className="text-md text-black rounded-md text-center ">Null</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
                           <div className=" mx-14 text-lg text-center">1</div>
@@ -333,13 +333,13 @@ function StudentRegistration() {
                           <div className="mx-14 text-md text-center">Mr John</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
-                          <div className="text-md text-white rounded-md text-center bg-rose-400">Prerequisite</div>
+                          <div className="text-md text-black rounded-md text-center ">Prerequisite</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
                           <div className=" mx-14 text-lg text-center">4</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
-                          <div className="text-left font-medium mr-3 text-rose-500">composary</div>
+                          <div className="text-left font-medium mr-3 text-rose-500">compulsory</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
                           <div className="text-left font-medium text-emerald-500">
@@ -373,7 +373,7 @@ function StudentRegistration() {
                           <div className="mx-14 text-md text-center">Mr Dung</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
-                          <div className="text-md text-white rounded-md text-center bg-green-400">Null</div>
+                          <div className="text-md text-black rounded-md text-center ">Null</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
                           <div className=" mx-14 text-lg text-center">4</div>
@@ -413,13 +413,13 @@ function StudentRegistration() {
                           <div className="mx-14 text-md text-center">Mr John</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
-                          <div className="text-md text-white rounded-md text-center bg-rose-400">Prerequisite</div>
+                          <div className="text-md text-black rounded-md text-center ">Prerequisite</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
                           <div className=" mx-14 text-lg text-center">4</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
-                          <div className="text-left font-medium mr-3 text-rose-500">composary</div>
+                          <div className="text-left font-medium mr-3 text-rose-500">compulsory</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
                           <div className="text-left font-medium text-emerald-500">
@@ -453,13 +453,13 @@ function StudentRegistration() {
                           <div className="mx-14 text-md text-center">Mr Tabnan</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
-                          <div className="text-md text-white rounded-md text-center bg-blue-500">Non prerequisite</div>
+                          <div className="text-md text-black rounded-md text-center ">Non prerequisite</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
                           <div className=" mx-14 text-lg text-center">2</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
-                          <div className="text-left font-medium mr-3 text-rose-500">composary</div>
+                          <div className="text-left font-medium mr-3 text-rose-500">compulsory</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
                           <div className="text-left font-medium text-emerald-500">
@@ -493,13 +493,13 @@ function StudentRegistration() {
                           <div className="mx-14 text-md text-center">Mr Collins</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
-                          <div className="text-md text-white rounded-md text-center bg-rose-400">Prerequisite</div>
+                          <div className="text-md text-black rounded-md text-center">Prerequisite</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
                           <div className=" mx-14 text-lg text-center">2</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
-                          <div className="text-left font-medium mr-3 text-rose-500">composary</div>
+                          <div className="text-left font-medium mr-3 text-rose-500">compulsory</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
                           <div className="text-left font-medium text-emerald-500">
@@ -533,7 +533,7 @@ function StudentRegistration() {
                           <div className="mx-14 text-md text-center">Mr Mallum</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
-                          <div className="text-md text-white rounded-md text-center bg-green-400">Null</div>
+                          <div className="text-md text-blackrounded-md text-center ">Null</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
                           <div className=" mx-14 text-lg text-center">1</div>

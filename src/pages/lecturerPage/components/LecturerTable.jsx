@@ -4,7 +4,7 @@ import { NavLink, useLocation } from 'react-router-dom'
 const LecturerTable = () => {
   const location = useLocation()
   return (
-    <div className='mt-11 flex flex-col'><table className="table-auto w-full">
+    <div className=' overflow-x-auto mt-11 flex flex-col'><table className="table-auto w-full">
     {/* Table header */}
     <thead className="text-xs uppercase text-slate-400 bg-slate-50 rounded-sm">
       <tr>

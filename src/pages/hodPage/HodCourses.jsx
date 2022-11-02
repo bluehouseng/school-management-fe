@@ -54,10 +54,18 @@ function HodDashboard() {
                 {/* <FilterButton align="right" /> */}
                 {/* Datepicker built with flatpickr */}
 
-                <h3 className="text-xl leading-snug text-slate-800 font-bold mt-6 mb-5">Course Assignin category</h3>
+                <h3 className="text-xl leading-snug text-slate-800 font-bold mt-6 mb-5">Assign courses</h3>
                
-             
-                <Datepicker align="right" />
+             <div className='flex '>
+               <Datepicker align="right" />
+               <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white ml-4">
+                        <svg className="w-4 h-4 fill-current opacity-50 shrink-0" viewBox="0 0 16 16">
+                          <path d="M15 7H9V1c0-.6-.4-1-1-1S7 .4 7 1v6H1c-.6 0-1 .4-1 1s.4 1 1 1h6v6c0 .6.4 1 1 1s1-.4 1-1V9h6c.6 0 1-.4 1-1s-.4-1-1-1z" />
+                        </svg>
+                        <span className="ml-2">Add courses</span>
+                      </button>
+             </div>
+               
               </div>
 
             
@@ -245,6 +253,190 @@ function HodDashboard() {
     </div>
   </div>
 </div>
+                <h3 className="text-xl leading-snug text-slate-800 font-bold  mb-2 mt-12">Elective courses</h3>
+               
+                <div className="grid grid-cols-12 gap-6">
+  {/* Card 1 */}
+  <div className="col-span-full xl:col-span-4 bg-white shadow-md rounded-sm border border-slate-200">
+    {/* Card content */}
+    <div className="flex flex-col h-full p-5">
+      <div className="grow">
+        <header>
+          <h3 className="text-lg text-slate-800 font-semibold mb-1">English</h3>
+        </header>
+      </div>
+      {/* Card footer */}
+      <footer className="mt-2">
+        <div className="flex flex-wrap justify-between items-center">
+          {/* Left side */}
+          <div className="text-sm text-rose-500 italic">Not assigned</div>
+          {/* Right side */}
+          <a className="text-sm font-medium text-indigo-500 hover:text-indigo-600" href="#0">Assign course -&gt;</a>
+        </div>
+      </footer>
+    </div>
+  </div>
+  {/* Card 2 */}
+  <div className="col-span-full xl:col-span-4 bg-white shadow-md rounded-sm border border-slate-200">
+    {/* Card content */}
+    <div className="flex flex-col h-full p-5">
+      <div className="grow">
+        <header>
+          <h3 className="text-lg text-slate-800 font-semibold mb-1">Mathematics</h3>
+        </header>
+      </div>
+      {/* Card footer */}
+      <footer className="mt-2">
+        <div className="flex flex-wrap justify-between items-center">
+          {/* Left side */}
+          <div className="text-sm text-rose-500 italic">Not assigned </div>
+          {/* Right side */}
+          <a className="text-sm font-medium text-indigo-500 hover:text-indigo-600" href="#0">Assign course -&gt;</a>
+        </div>
+      </footer>
+    </div>
+  </div>
+  {/* Card 3 */}
+  <div className="col-span-full xl:col-span-4 bg-white shadow-md rounded-sm border border-slate-200">
+    {/* Card content */}
+    <div className="flex flex-col h-full p-5">
+      <div className="grow">
+        <header>
+          <h3 className="text-lg text-slate-800 font-semibold mb-1">Boilogy</h3>
+        </header>
+      </div>
+      {/* Card footer */}
+      <footer className="mt-2">
+        <div className="flex flex-wrap justify-between items-center">
+          {/* Left side */}
+          <div className="text-sm text-green-500 italic">Assigned</div>
+          {/* Right side */}
+          <a className="text-sm font-medium text-indigo-500 hover:text-indigo-600" href="#0">Assign course -&gt;</a>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <div className="col-span-full xl:col-span-4 bg-white shadow-md rounded-sm border border-slate-200">
+    {/* Card content */}
+    <div className="flex flex-col h-full p-5">
+      <div className="grow">
+        <header>
+          <h3 className="text-lg text-slate-800 font-semibold mb-1">Social studies</h3>
+        </header>
+      </div>
+      {/* Card footer */}
+      <footer className="mt-2">
+        <div className="flex flex-wrap justify-between items-center">
+          {/* Left side */}
+          <div className="text-sm text-green-500 italic">Assigned</div>
+          {/* Right side */}
+          <a className="text-sm font-medium text-indigo-500 hover:text-indigo-600 " href="#0">Assign course -&gt;</a>
+        </div>
+      </footer>
+    </div>
+  </div>
+  {/* Card 2 */}
+  <div className="col-span-full xl:col-span-4 bg-white shadow-md rounded-sm border border-slate-200">
+    {/* Card content */}
+    <div className="flex flex-col h-full p-5">
+      <div className="grow">
+        <header>
+          <h3 className="text-lg text-slate-800 font-semibold mb-1">Mathematics</h3>
+        </header>
+      </div>
+      {/* Card footer */}
+      <footer className="mt-2">
+        <div className="flex flex-wrap justify-between items-center">
+          {/* Left side */}
+          <div className="text-sm text-rose-500 italic">Not assigned </div>
+          {/* Right side */}
+          <a className="text-sm font-medium text-indigo-500 hover:text-indigo-600" href="#0">Assign course -&gt;</a>
+        </div>
+      </footer>
+    </div>
+  </div>
+  {/* Card 3 */}
+  <div className="col-span-full xl:col-span-4 bg-white shadow-md rounded-sm border border-slate-200">
+    {/* Card content */}
+    <div className="flex flex-col h-full p-5">
+      <div className="grow">
+        <header>
+          <h3 className="text-lg text-slate-800 font-semibold mb-1">Physics</h3>
+        </header>
+      </div>
+      {/* Card footer */}
+      <footer className="mt-2">
+        <div className="flex flex-wrap justify-between items-center">
+          {/* Left side */}
+          <div className="text-sm text-rose-500 italic">Not assigned</div>
+          {/* Right side */}
+          <a className="text-sm font-medium text-indigo-500 hover:text-indigo-600" href="#0">Assign course -&gt;</a>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <div className="col-span-full xl:col-span-4 bg-white shadow-md rounded-sm border border-slate-200">
+    {/* Card content */}
+    <div className="flex flex-col h-full p-5">
+      <div className="grow">
+        <header>
+          <h3 className="text-lg text-slate-800 font-semibold mb-1">English</h3>
+        </header>
+      </div>
+      {/* Card footer */}
+      <footer className="mt-2">
+        <div className="flex flex-wrap justify-between items-center">
+          {/* Left side */}
+          <div className="text-sm text-rose-500 italic">Not assigned</div>
+          {/* Right side */}
+          <a className="text-sm font-medium text-indigo-500 hover:text-indigo-600" href="#0">Assign course -&gt;</a>
+        </div>
+      </footer>
+    </div>
+  </div>
+  {/* Card 2 */}
+  <div className="col-span-full xl:col-span-4 bg-white shadow-md rounded-sm border border-slate-200">
+    {/* Card content */}
+    <div className="flex flex-col h-full p-5">
+      <div className="grow">
+        <header>
+          <h3 className="text-lg text-slate-800 font-semibold mb-1">Mathematics</h3>
+        </header>
+      </div>
+      {/* Card footer */}
+      <footer className="mt-2">
+        <div className="flex flex-wrap justify-between items-center">
+          {/* Left side */}
+          <div className="text-sm text-rose-500 italic">Not assigned </div>
+          {/* Right side */}
+          <a className="text-sm font-medium text-indigo-500 hover:text-indigo-600" href="#0">Assign course -&gt;</a>
+        </div>
+      </footer>
+    </div>
+  </div>
+  {/* Card 3 */}
+  <div className="col-span-full xl:col-span-4 bg-white shadow-md rounded-sm border border-slate-200">
+    {/* Card content */}
+    <div className="flex flex-col h-full p-5">
+      <div className="grow">
+        <header>
+          <h3 className="text-lg text-slate-800 font-semibold mb-1">Boilogy</h3>
+        </header>
+      </div>
+      {/* Card footer */}
+      <footer className="mt-2">
+        <div className="flex flex-wrap justify-between items-center">
+          {/* Left side */}
+          <div className="text-sm text-green-500 italic">Assigned</div>
+          {/* Right side */}
+          <a className="text-sm font-medium text-indigo-500 hover:text-indigo-600" href="#0">Assign course -&gt;</a>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+
+
 </section>
 
           </div>

@@ -79,6 +79,7 @@ import LecturerGrading from './pages/lecturerPage/LecturerGrading';
 import AdminDashboard from './pages/adminPage/AdminDashboard';
 import HodDashboard from './pages/hodPage/HodDashboard';
 import HodCourses from './pages/hodPage/HodCourses';
+import NumberOfStudents from './pages/hodPage/NumberOfStudents';
 import routes from './routes';
 import AccountantDashboard from './pages/accountantPage/AccountantDashboard';
 
@@ -161,6 +162,7 @@ const pages = [
     {path:  routes.adminDashbaord, element: <AdminDashboard />},
     {path:  routes.hodDashbaord, element: <HodDashboard />},
     {path:  routes.hodCourses, element: <HodCourses />},
+    {path:  routes.numberOfStudents, element: <NumberOfStudents />},
     {path:  routes.accountantDashboard, element: <AccountantDashboard />},
     // { path: '/', element: < /> },
 
@@ -182,6 +184,7 @@ const hod = [
     {path:  routes.hodCourses, element: <HodCourses />},
     { path: routes.signin, element: <Signin /> },
     {path:  routes.hodDashbaord, element: <HodDashboard />},
+    {path:  routes.numberOfStudents, element: <NumberOfStudents />},
 ]
 const lecturer = [
    {path:  routes.lecturerDashboard, element: <LecturerDashboard />},
