@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 
 import AdminSidebar from './components/AdminSidebar';
 import Header from '../../partials/Header';
@@ -6,6 +7,7 @@ import SettingsSidebar from '../../partials/settings/SettingsSidebar';
 import AppsPanel from '../../partials/settings/AppsPanel';
 
 function AdminDashboard() {
+  const location = useLocation()
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
@@ -133,15 +135,21 @@ function AdminDashboard() {
                       </div>
                       <div className="flex items-center text-amber-500">
                       <button className="btn-sm border-slate-200 hover:border-slate-300 shadow-sm flex items-center">
-                     
-                     <span>Delete Card</span>
+                    
+                       <span>Delete Card</span>
+                    
+
                    </button>
                       </div>
                     </div>
                     {/* Right side */}
                     <button className="btn-sm border-slate-200 hover:border-slate-300 shadow-sm flex items-center">
                      
-                      <span>Click to create -&gt;</span>
+
+                     <NavLink end to='/create/staff'>
+<span>Click to create -&gt;</span>
+                     </NavLink>
+                      
                     </button>
                   </div>
                 </footer>

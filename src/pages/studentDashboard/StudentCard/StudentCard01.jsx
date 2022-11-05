@@ -5,8 +5,8 @@ import './StudentCard.css';
 function StudentCard01() {
   return (
     
-    <div className="md:grid-rows-2 xl:col-span-8 px-10 py-10 bg-white   shadow-lg rounded-md border border-slate-200">
-      <div className='md:50px'>
+    <div className="grid-rows-2 col-span-8 px-10 py-10 bg-white shadow-lg rounded-md border border-slate-200">
+      <div className='50px'>
       <div className=" flex wrap " > 
 
         <NavLink to='/student/fees'>

@@ -4,7 +4,7 @@ import { NavLink, useLocation } from 'react-router-dom';
 const LecturerAnalytics = () => {
   const location = useLocation();
   return (
-    <div className='flex justify-around '>
+    <div className='flex justify-around'>
 
     <div className="bg-slate-300 rounded-md text-center p-5 mr-16 ">
                     <div className="flex flex-col h-full">
@@ -35,7 +35,7 @@ const LecturerAnalytics = () => {
                         {/* Content */}
                         <h3 className="text-lg font-semibold text-slate-800 mb-1">Assigned courses</h3>
                         <div className="text-sm">Lorem ipsum dolor sit consectetur adipiscing elit sed...</div>
-                        <h2 className="text-xlg font-semibold text-slate-800 mb-1">3</h2>
+                        <h2 className="text-xl font-semibold text-slate-800 mb-1">3</h2>
                       </div>
                       {/* Link */}
                       <div>
@@ -77,7 +77,7 @@ const LecturerAnalytics = () => {
                         {/* Content */}
                         <h3 className="text-lg font-semibold text-slate-800 mb-1">Number of Students</h3>
                         <div className="text-sm">Lorem ipsum dolor sit consectetur adipiscing elit sed do.</div>
-                        <h2 className="text-xlg font-semibold text-slate-800 mb-1">39</h2>
+                        <h2 className="text-xl font-semibold text-slate-800 mb-1">39</h2>
                       </div>
                       {/* Link */}
                       <div>
@@ -91,7 +91,7 @@ const LecturerAnalytics = () => {
                 {/* //   item in sections */}
 
 
-                <div className="bg-slate-300 rounded-md text-center  p-5">
+                <div className="bg-slate-300 rounded-md text-center ">
                     <div className="flex flex-col h-full">
                       <div className="grow mb-2">
                         {/* Icon */}
@@ -119,9 +119,9 @@ const LecturerAnalytics = () => {
                         </div>
                         {/* Content */}
                         <h3 className="text-lg font-semibold text-slate-800 mb-1">Grade student</h3>
-                        <div className="text-sm">Lorem ipsum dolor sit consectetur adipiscing elit sed do.</div> 
+                        <div className="text-sm ">Lorem ipsum dolor sit consectetur adipiscing elit sed do.</div> 
                         <NavLink end to='/lecturer/grading'>
-                          <a className="text-sm font-medium text-indigo-500 hover:text-indigo-600" href="#0">
+                          <a className="text-md font-medium text-indigo-500 hover:text-indigo-600" href="#0">
                           click here -&gt;
                         </a> 
                         </NavLink>

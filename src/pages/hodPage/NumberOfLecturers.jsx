@@ -1,12 +1,57 @@
-import React from 'react'
-import { NavLink, useLocation } from 'react-router-dom'
+import React, { useState } from 'react';
 
-const LecturerTable = () => {
-  const location = useLocation()
+
+import HodSidebar from './components/HodSidebar';
+import Header from '../../partials/Header';
+
+
+function NumberOfLecturers() {
+ 
+
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
   return (
-    <div className=' overflow-x-auto mt-11 flex flex-col'><table className="table-auto w-full">
+    <div className="flex h-screen overflow-hidden">
+
+      {/* Sidebar */}
+      <HodSidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
+
+      {/* Content area */}
+      <div className="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
+
+        {/*  Site header */}
+        <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
+
+        <main>
+          <div className="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-9xl mx-auto">
+
+            {/* Welcome banner */}
+            {/* <HodWelcomeBanner /> */}
+            {/* Dashboard actions */}
+            {/* Cards */}
+            <div className="">
+
+              {/* Line chart (Acme Plus) */}
+              <div>
+                <div className='flex justify-between mb-2'>
+               <h1 className='text-4xl font-extrabold'>Welcome...</h1>
+               <div>
+                 {/* <h2> <span  className='text-black text-xl'>Registration number:</span>  13/3333j/3  </h2> 
+<h2> <span className='text-black text-xl'>Department: </span> Computer Science </h2> */}
+               </div>
+           
+            </div>
+            
+            <p>Take a look at the total list of student in the departments of Mathematics</p> 
+              </div>
+             
+
+
+              {/* Line chart (Acme Advanced) */}
+              <div className='mt-11 flex flex-col bg-slate-500 p-7 rounded-sm'>
+        <table className="table-auto w-full ">
     {/* Table header */}
-    <thead className="text-xs uppercase text-slate-400 bg-slate-50 rounded-sm">
+    <thead className="text-xs uppercase text-slate-400 bg-gray-200 rounded-sm">
       <tr>
         <th className="p-2 whitespace-nowrap">
           <div className="font-semibold text-left">id</div>
@@ -15,10 +60,10 @@ const LecturerTable = () => {
           <div className="font-semibold text-left ml-7">fullname</div>
         </th>
         <th className="p-2 whitespace-nowrap">
-          <div className="font-semibold text-left ml-3">Department</div>
+          <div className="font-semibold text-left ml-3">Position</div>
         </th>
         <th className="p-2 whitespace-nowrap">
-          <div className="font-semibold text-center">Cousre</div>
+          <div className="font-semibold text-center">Course</div>
         </th>
         <th className="p-2 whitespace-nowrap">
           <div className="font-semibold text-center">Course Code</div>
@@ -33,12 +78,15 @@ const LecturerTable = () => {
           <div className="font-semibold text-left">View Profile</div>
         </th>
         <th className="p-2 whitespace-nowrap">
-          <div className="font-semibold text-left">Input Grade</div>
+        
+             <div className="font-semibold text-left">Assign course</div>
+        
+         
         </th>
       </tr>
     </thead>
     {/* Table body */}
-    <tbody className="text-sm divide-y divide-slate-100">
+    <tbody className="text-sm divide-y divide-slate-100 ">
       {/* Row */}
   
       {/* Row */}
@@ -50,22 +98,22 @@ const LecturerTable = () => {
             <div className="shrink-0 rounded-full mr-3 sm:mr-3 bg-indigo-500">
 
             </div>
-            <div className="font-medium text-slate-800">1</div>
+            <div className="font-medium text-black">1</div>
           </div>
         </td>
         <td className="p-2 whitespace-nowrap">
-          <div className="flex shrink-0 -space-x-3 ml-5">
+          <div className="flex shrink-0 -space-x-3 ml-5 text-black">
           John smilga
           </div>
         </td>
         <td className="p-2 whitespace-nowrap">
           <div className="flex items-center ml-4">
 
-            <div>Physics</div>
+            <div className='text-black'>Physics</div>
           </div>
         </td>
         <td className="p-2 whitespace-nowrap">
-          <div className="mx-14 text-md text-center">Agricultural</div>
+          <div className="mx-14 text-md text-center text-black">Agricultural</div>
         </td>
         <td className="p-2 whitespace-nowrap">
           <div className="text-sm text-black rounded-md text-center ">Arg222</div>
@@ -79,41 +127,42 @@ const LecturerTable = () => {
         <td className="p-2 whitespace-nowrap">
           <div className="text-left font-medium mr-2 ml-4 text-emerald-500">View</div>
         </td>
-        <td className="p-2 whitespace-nowrap">
-          <NavLink end to='/lecturer/grading'>
-            <div className="text-left font-medium mr-2 ml-4 text-blue-600">Grade</div>
+        <td className="p-2 whitespace-nowrap ">
+          <NavLink end to='/hod/courses'>
+ <div className="text-left font-medium mr-7 text-center text-black">Assign role  <div className='border-2 border-b-yellow-900 border-t-transparent border-x-transparent '></div></div>
           </NavLink>
-          
+         
+        
         </td>
         
       </tr>
       {/* Row */}
       {/* Row */}
-      <tr>
+      <tr className='py-36 '>
         <td className="whitespace-nowrap">
           <div className="flex items-center">
             <div className="shrink-0 rounded-full mr-3 sm:mr-3 bg-indigo-500">
 
             </div>
-            <div className="font-medium text-slate-800">2</div>
+            <div className="font-medium text-black">2</div>
           </div>
         </td>
         <td className="p-2 whitespace-nowrap">
-          <div className="flex shrink-0 -space-x-3 ml-5">
+          <div className="flex shrink-0 -space-x-3 ml-5 text-black">
             Timothy linus
           </div>
         </td>
         <td className="p-2 whitespace-nowrap">
           <div className="flex items-center ml-4">
 
-            <div>Mathematics</div>
+            <div className='text-black'>Mathematics</div>
           </div>
         </td>
         <td className="p-2 whitespace-nowrap">
-          <div className="mx-14 text-md text-center">Agricultural</div>
+          <div className="mx-14 text-md text-center text-black">Agricultural</div>
         </td>
         <td className="p-2 whitespace-nowrap">
-          <div className="text-sm text-black rounded-md text-center ">Arg222</div>
+          <div className="text-sm text-black rounded-md text-center  ">Arg222</div>
         </td>
         <td className="p-2 whitespace-nowrap">
           <div className=" mx-14 text-lg text-center">4</div>
@@ -126,13 +175,12 @@ const LecturerTable = () => {
             View
           </div>
         </td>
-        <td className="p-2 whitespace-nowrap">
-          <NavLink end to='/lecturer/grading'>
-             <div className="text-left font-medium text-blue-600 ml-4">
-            Grade
-          </div>
+        <td className="p-2 whitespace-nowrap ">
+          <NavLink end to='/hod/courses'>
+<div className="text-left font-medium mr-7 text-center text-black">Assign role  <div className='border-2 border-b-yellow-900 border-t-transparent border-x-transparent '></div></div>
           </NavLink>
-         
+          
+        
         </td>
       </tr>
       {/* Row */}
@@ -143,22 +191,22 @@ const LecturerTable = () => {
             <div className="shrink-0 rounded-full mr-3 sm:mr-3 bg-indigo-500">
 
             </div>
-            <div className="font-medium text-slate-800">3</div>
+            <div className="font-medium text-black">3</div>
           </div>
         </td>
         <td className="p-2 whitespace-nowrap">
-          <div className="flex shrink-0 -space-x-3 ml-5">
+          <div className="flex shrink-0 -space-x-3 ml-5 text-black">
             Andrea paloma
           </div>
         </td>
         <td className="p-2 whitespace-nowrap">
           <div className="flex items-center ml-4">
 
-            <div>English</div>
+            <div className='text-black'>English</div>
           </div>
         </td>
         <td className="p-2 whitespace-nowrap">
-          <div className="mx-14 text-md text-center">Agricultural</div>
+          <div className="mx-14 text-md text-center text-black">Agricultural</div>
         </td>
         <td className="p-2 whitespace-nowrap">
           <div className="text-md text-black rounded-md text-center ">Arg222</div>
@@ -174,30 +222,22 @@ const LecturerTable = () => {
           View 
           </div>
         </td>
-        <td className="p-2 whitespace-nowrap">
-          <NavLink end to='/lecturer/grading'>
-<div className="text-left font-medium text-blue-600 ml-4">
-          Grade
-          </div>
+        <td className="p-2 whitespace-nowrap ">
+          <NavLink end to='/hod/courses'>
+<div className="text-left font-medium mr-7 text-center text-black">Assign role  <div className='border-2 border-b-yellow-900 border-t-transparent border-x-transparent '></div></div>
           </NavLink>
           
+        
         </td>
       </tr>
       {/* Row */}
-    
-
       {/* Row */}
       
       {/* Row */}
       {/* Row */}
 
       {/* Row */}
-
-
     </tbody>
-
-    
-
   </table>
 
   <div className='flex justify-end mt-7'>
@@ -207,7 +247,17 @@ const LecturerTable = () => {
 
 
   </div>
-  )
+             
+              
+            </div>
+
+          </div>
+        </main>
+
+      </div>
+
+    </div>
+  );
 }
 
-export default LecturerTable
+export default NumberOfLecturers;
