@@ -77,7 +77,10 @@ const LecturerTable = () => {
           <div className="text-left font-medium mr-3 text-black">100</div>
         </td>
         <td className="p-2 whitespace-nowrap">
+          <NavLink end to='/student/profile'>
+
           <div className="text-left font-medium mr-2 ml-4 text-emerald-500">View</div>
+          </NavLink>
         </td>
         <td className="p-2 whitespace-nowrap">
           <NavLink end to='/lecturer/grading'>
