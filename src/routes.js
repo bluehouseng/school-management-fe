@@ -70,6 +70,7 @@ export default Object.freeze({
   studentTranscript: "/student/transcript",
   studentRegistration: "/student/registration",
   studentHostel: "/student/hostel",
+  studentProfile: "/student/profile",
   according: "/component/accordion",
   
   icons: "/component/icons",
