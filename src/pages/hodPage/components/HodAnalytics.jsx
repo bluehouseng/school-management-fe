@@ -82,7 +82,7 @@ const HodAnalytics = () => {
             <h3 className="text-lg text-slate-800 font-semibold mb-1">Number of students</h3>
             <h3 className="text-xlg text-slate-800 font-semibold mb-1">500</h3>
             <NavLink end to='/number/students'>
-                <h3 className="text-xlg text-green-500  font-semibold mb-1">click to view-&gt;</h3> 
+                <h3 className="text-xlg text-green-200  font-bold mb-1">click to view-&gt;</h3> 
             </NavLink>
          
           </div>

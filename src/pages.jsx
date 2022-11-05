@@ -77,9 +77,11 @@ import LecturerProfile from './pages/lecturerPage/LecturerProfile';
 import LecturerGrading from './pages/lecturerPage/LecturerGrading';
 // import Transactions from './pages/finance/Transactions';
 import AdminDashboard from './pages/adminPage/AdminDashboard';
+import CreateStaffs from './pages/adminPage/CreateStaffs';
 import HodDashboard from './pages/hodPage/HodDashboard';
 import HodCourses from './pages/hodPage/HodCourses';
 import NumberOfStudents from './pages/hodPage/NumberOfStudents';
+import NumberOfLecturers from './pages/hodPage/NumberOfLecturers'
 import routes from './routes';
 import AccountantDashboard from './pages/accountantPage/AccountantDashboard';
 
@@ -159,9 +161,12 @@ const pages = [
     {path:  routes.lecturerDashboard, element: <LecturerDashboard />},
     {path:  routes.lecturerProfile, element: <LecturerProfile />},
     {path:  routes.lecturerGrading, element: <LecturerGrading/>},
+    // Amin-section
     {path:  routes.adminDashbaord, element: <AdminDashboard />},
     {path:  routes.hodDashbaord, element: <HodDashboard />},
-    {path:  routes.hodCourses, element: <HodCourses />},
+    {path:  routes.createStaff, element: <CreateStaffs />},
+    {path:  routes.hodCourses, element: <HodCourses />}, 
+    {path:  routes.numberOfLecturers, element: <NumberOfLecturers />}, 
     {path:  routes.numberOfStudents, element: <NumberOfStudents />},
     {path:  routes.accountantDashboard, element: <AccountantDashboard />},
     // { path: '/', element: < /> },
@@ -185,6 +190,7 @@ const hod = [
     { path: routes.signin, element: <Signin /> },
     {path:  routes.hodDashbaord, element: <HodDashboard />},
     {path:  routes.numberOfStudents, element: <NumberOfStudents />},
+    {path:  routes.numberOfLecturers, element: <NumberOfLecturers />}, 
 ]
 const lecturer = [
    {path:  routes.lecturerDashboard, element: <LecturerDashboard />},

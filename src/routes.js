@@ -76,10 +76,15 @@ export default Object.freeze({
   lecturerDashboard: "/lecturer/dashboard",
   lecturerProfile: "/lecturer/profile",
   lecturerGrading: "/lecturer/grading", 
+  // Admin-section
   adminDashbaord: "/admin/dashboard",
   hodDashbaord: "/hod/dashboard",
+  createStaff: "/create/staff",
+  // hod-section
   hodCourses: "/hod/courses",
   numberOfStudents: "/number/students",
+  numberOfLecturers: "/number/lecturers",
+  // accountant-section
   accountantDashboard: "/accountant/dashboard"
   // lecturerProfile: "/lecturer/lecturerProfile",
 
