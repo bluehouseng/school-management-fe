@@ -85,6 +85,8 @@ import NumberOfStudents from './pages/hodPage/NumberOfStudents';
 import NumberOfLecturers from './pages/hodPage/NumberOfLecturers'
 import routes from './routes';
 import AccountantDashboard from './pages/accountantPage/AccountantDashboard';
+import RegistrarDashboard from './pages/registrarPage/RegistrarDashbaord';
+
 
 const pages = [
     { path: routes.home, element: <Dashboard /> },
@@ -172,6 +174,8 @@ const pages = [
     {path:  routes.numberOfLecturers, element: <NumberOfLecturers />}, 
     {path:  routes.numberOfStudents, element: <NumberOfStudents />},
     {path:  routes.accountantDashboard, element: <AccountantDashboard />},
+    // registrar-dashboard
+    {path:  routes.registrarDashbaord, element: <RegistrarDashboard />},
     // { path: '/', element: < /> },
 
 ];
@@ -212,6 +216,7 @@ const accountant = [
 const registrar = [
     { path: '/', element: <h1>Registrar Dashboard</h1> },
     { path: routes.signin, element: <Signin /> },
+    {path:  routes.registrarDashbaord, element: <RegistrarDashboard />},
 ]
 
 const loggedOut = [
