@@ -42,11 +42,9 @@ function NumberOfLecturers() {
            
             </div>
             
-            <p>Take a look at the total list of student in the departments of Mathematics</p> 
+            <p>Take a look at the total list of lecturers in the departments of Mathematics</p> 
               </div>
              
-
-
               {/* Line chart (Acme Advanced) */}
               <div className='mt-11 flex flex-col bg-slate-500 p-7 rounded-sm'>
         <table className="table-auto w-full ">
@@ -69,10 +67,10 @@ function NumberOfLecturers() {
           <div className="font-semibold text-center">Course Code</div>
         </th>
         <th className="p-2 whitespace-nowrap">
-          <div className="font-semibold text-center">unit</div>
+          <div className="font-semibold text-center">uni</div>
         </th>
         <th className="p-2 whitespace-nowrap">
-          <div className="font-semibold text-left mr-7">Level</div>
+          <div className="font-semibold text-left mr-7">Level Teaching</div>
         </th>
         <th className="p-2 whitespace-nowrap">
           <div className="font-semibold text-left">View Profile</div>
@@ -89,8 +87,6 @@ function NumberOfLecturers() {
     <tbody className="text-sm divide-y divide-slate-100 ">
       {/* Row */}
   
-      {/* Row */}
-     
       {/* Row */}
       <tr>
         <td className="whitespace-nowrap">
@@ -128,111 +124,17 @@ function NumberOfLecturers() {
           <div className="text-left font-medium mr-2 ml-4 text-emerald-500">View</div>
         </td>
         <td className="p-2 whitespace-nowrap ">
-          <NavLink end to='/hod/courses'>
+         
  <div className="text-left font-medium mr-7 text-center text-black">Assign role  <div className='border-2 border-b-yellow-900 border-t-transparent border-x-transparent '></div></div>
-          </NavLink>
+        
          
         
         </td>
         
       </tr>
       {/* Row */}
-      {/* Row */}
-      <tr className='py-36 '>
-        <td className="whitespace-nowrap">
-          <div className="flex items-center">
-            <div className="shrink-0 rounded-full mr-3 sm:mr-3 bg-indigo-500">
 
-            </div>
-            <div className="font-medium text-black">2</div>
-          </div>
-        </td>
-        <td className="p-2 whitespace-nowrap">
-          <div className="flex shrink-0 -space-x-3 ml-5 text-black">
-            Timothy linus
-          </div>
-        </td>
-        <td className="p-2 whitespace-nowrap">
-          <div className="flex items-center ml-4">
-
-            <div className='text-black'>Mathematics</div>
-          </div>
-        </td>
-        <td className="p-2 whitespace-nowrap">
-          <div className="mx-14 text-md text-center text-black">Agricultural</div>
-        </td>
-        <td className="p-2 whitespace-nowrap">
-          <div className="text-sm text-black rounded-md text-center  ">Arg222</div>
-        </td>
-        <td className="p-2 whitespace-nowrap">
-          <div className=" mx-14 text-lg text-center">4</div>
-        </td>
-        <td className="p-2 whitespace-nowrap">
-          <div className="text-left font-medium mr-3 text-black">100</div>
-        </td>
-        <td className="p-2 whitespace-nowrap">
-          <div className="text-left font-medium text-emerald-500 ml-4">
-            View
-          </div>
-        </td>
-        <td className="p-2 whitespace-nowrap ">
-          <NavLink end to='/hod/courses'>
-<div className="text-left font-medium mr-7 text-center text-black">Assign role  <div className='border-2 border-b-yellow-900 border-t-transparent border-x-transparent '></div></div>
-          </NavLink>
-          
-        
-        </td>
-      </tr>
-      {/* Row */}
-      {/* Row */}
-      <tr>
-        <td className="whitespace-nowrap">
-          <div className="flex items-center">
-            <div className="shrink-0 rounded-full mr-3 sm:mr-3 bg-indigo-500">
-
-            </div>
-            <div className="font-medium text-black">3</div>
-          </div>
-        </td>
-        <td className="p-2 whitespace-nowrap">
-          <div className="flex shrink-0 -space-x-3 ml-5 text-black">
-            Andrea paloma
-          </div>
-        </td>
-        <td className="p-2 whitespace-nowrap">
-          <div className="flex items-center ml-4">
-
-            <div className='text-black'>English</div>
-          </div>
-        </td>
-        <td className="p-2 whitespace-nowrap">
-          <div className="mx-14 text-md text-center text-black">Agricultural</div>
-        </td>
-        <td className="p-2 whitespace-nowrap">
-          <div className="text-md text-black rounded-md text-center ">Arg222</div>
-        </td>
-        <td className="p-2 whitespace-nowrap">
-          <div className=" mx-14 text-lg text-center">2</div>
-        </td>
-        <td className="p-2 whitespace-nowrap">
-          <div className="text-left font-medium mr-3 text-black">200</div>
-        </td>
-        <td className="p-2 whitespace-nowrap">
-          <div className="text-left font-medium text-emerald-500 ml-4">
-          View 
-          </div>
-        </td>
-        <td className="p-2 whitespace-nowrap ">
-          <NavLink end to='/hod/courses'>
-<div className="text-left font-medium mr-7 text-center text-black">Assign role  <div className='border-2 border-b-yellow-900 border-t-transparent border-x-transparent '></div></div>
-          </NavLink>
-          
-        
-        </td>
-      </tr>
-      {/* Row */}
-      {/* Row */}
-      
+    
       {/* Row */}
       {/* Row */}
 

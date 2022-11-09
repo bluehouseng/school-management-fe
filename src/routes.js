@@ -70,6 +70,7 @@ export default Object.freeze({
   studentTranscript: "/student/transcript",
   studentRegistration: "/student/registration",
   studentHostel: "/student/hostel",
+  studentProfile: "/student/profile",
   according: "/component/accordion",
   
   icons: "/component/icons",
@@ -85,7 +86,8 @@ export default Object.freeze({
   numberOfStudents: "/number/students",
   numberOfLecturers: "/number/lecturers",
   // accountant-section
-  accountantDashboard: "/accountant/dashboard"
-  // lecturerProfile: "/lecturer/lecturerProfile",
+  accountantDashboard: "/accountant/dashboard",
+  // registrar-dashboard
+  registrarDashbaord: "/registrar/dashbaord"
 
 });
