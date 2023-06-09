@@ -9,7 +9,7 @@ import PageRoutes, { general } from "./pages";
 function App() {
   const user = {
     isAdmin: false,
-    role: "student",
+    role: "isAdmin",
   };
 
   const renderRoute = {
@@ -48,7 +48,7 @@ function App() {
 
   return (
     <>
-      <Routes>{renderRoute["student"]}</Routes>
+      <Routes>{renderRoute[userRole]}</Routes>
     </>
   );
 }
