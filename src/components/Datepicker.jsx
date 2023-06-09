@@ -24,7 +24,7 @@ function Datepicker({
   }
 
   return (
-    <div className="relative">
+    <div className="relative flex  items-center">
       <Flatpickr className="form-input pl-9 text-slate-500 hover:text-slate-600 font-medium focus:border-slate-300 w-60" options={options} />
       <div className="absolute inset-0 right-auto flex items-center pointer-events-none">
         <svg className="w-4 h-4 fill-current text-slate-500 ml-3" viewBox="0 0 16 16">

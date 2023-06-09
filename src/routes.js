@@ -62,6 +62,7 @@ export default Object.freeze({
   badge: "/component/badge",
   avatar: "/component/avatar",
   tooltip: "/component/tooltip",
+
   studentDashboard: "/student/dashboard",
   studentCourses: "/student/courses",
   studentFees: "/student/fees",
@@ -69,6 +70,24 @@ export default Object.freeze({
   studentTranscript: "/student/transcript",
   studentRegistration: "/student/registration",
   studentHostel: "/student/hostel",
+  studentProfile: "/student/profile",
   according: "/component/accordion",
+  
   icons: "/component/icons",
+  lecturerDashboard: "/lecturer/dashboard",
+  lecturerProfile: "/lecturer/profile",
+  lecturerGrading: "/lecturer/grading", 
+  // Admin-section
+  adminDashbaord: "/admin/dashboard",
+  hodDashbaord: "/hod/dashboard",
+  createStaff: "/create/staff",
+  // hod-section
+  hodCourses: "/hod/courses",
+  numberOfStudents: "/number/students",
+  numberOfLecturers: "/number/lecturers",
+  // accountant-section
+  accountantDashboard: "/accountant/dashboard",
+  // registrar-dashboard
+  registrarDashbaord: "/registrar/dashbaord"
+
 });

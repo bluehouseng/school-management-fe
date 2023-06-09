@@ -1,3 +1,4 @@
+import React from 'react';
 
 import Dashboard from './pages/Dashboard';
 import Analytics from './pages/Analytics';
@@ -71,8 +72,21 @@ import StudentCheckResult from './pages/studentDashboard/StudentCheckResult';
 import StudentTranscript from './pages/studentDashboard/StudentTranscript';
 import StudentRegistration from './pages/studentDashboard/StudentRegistration';
 import StudentHostel from './pages/studentDashboard/StudentHostel';
+import StudentProfile from './pages/lecturerPage/StudentProfile';
+import LecturerDashboard from './pages/lecturerPage/LecturerDashboard';
+import LecturerProfile from './pages/lecturerPage/LecturerProfile';
+import LecturerGrading from './pages/lecturerPage/LecturerGrading';
 // import Transactions from './pages/finance/Transactions';
+import AdminDashboard from './pages/adminPage/AdminDashboard';
+import CreateStaffs from './pages/adminPage/CreateStaffs';
+import HodDashboard from './pages/hodPage/HodDashboard';
+import HodCourses from './pages/hodPage/HodCourses';
+import NumberOfStudents from './pages/hodPage/NumberOfStudents';
+import NumberOfLecturers from './pages/hodPage/NumberOfLecturers'
 import routes from './routes';
+import AccountantDashboard from './pages/accountantPage/AccountantDashboard';
+import RegistrarDashboard from './pages/registrarPage/RegistrarDashbaord';
+
 
 const pages = [
     { path: routes.home, element: <Dashboard /> },
@@ -146,9 +160,24 @@ const pages = [
     { path: routes.studentCheckResult, element: <StudentCheckResult /> },
     { path: routes.studentTranscript, element: <StudentTranscript /> },
     { path: routes.studentRegistration, element: <StudentRegistration /> },
-    { path: routes.studentHostel, element: <StudentHostel/> },
+    { path: routes.studentHostel, element: <StudentHostel /> },
+    { path: routes.studentProfile, element: <StudentProfile /> },
+    {path:  routes.lecturerDashboard, element: <LecturerDashboard />},
+    {path:  routes.lecturerProfile, element: <LecturerProfile />},
+    {path:  routes.lecturerGrading, element: <LecturerGrading/>},
+    // Amin-section
+    {path:  routes.adminDashbaord, element: <AdminDashboard />},
+    {path:  routes.createStaff, element: <CreateStaffs />},
+    // hod-section
+    {path:  routes.hodDashbaord, element: <HodDashboard />},
+    {path:  routes.hodCourses, element: <HodCourses />}, 
+    {path:  routes.numberOfLecturers, element: <NumberOfLecturers />}, 
+    {path:  routes.numberOfStudents, element: <NumberOfStudents />},
+    {path:  routes.accountantDashboard, element: <AccountantDashboard />},
+    // registrar-dashboard
+    {path:  routes.registrarDashbaord, element: <RegistrarDashboard />},
     // { path: '/', element: < /> },
-    
+
 ];
 
 const student = [
@@ -160,16 +189,26 @@ const student = [
     { path: routes.studentCheckResult, element: <StudentCheckResult /> },
     { path: routes.studentTranscript, element: <StudentTranscript /> },
     { path: routes.studentRegistration, element: <StudentRegistration /> },
-    { path: routes.studentHostel, element: <StudentHostel/> },
+    { path: routes.studentHostel, element: <StudentHostel /> },
 ]
 
 const hod = [
-    { path: '/', element: <h1>HOD Dashboard</h1> },
+    {path:  routes.hodCourses, element: <HodCourses />},
     { path: routes.signin, element: <Signin /> },
+    {path:  routes.hodDashbaord, element: <HodDashboard />},
+    {path:  routes.numberOfStudents, element: <NumberOfStudents />},
+    {path:  routes.numberOfLecturers, element: <NumberOfLecturers />}, 
+]
+const lecturer = [
+   {path:  routes.lecturerDashboard, element: <LecturerDashboard />},
+   {path:  routes.lecturerProfile, element: <LecturerProfile />},
+   {path:  routes.lecturerGrading, element: <LecturerGrading/>},
+   { path: routes.studentProfile, element: <StudentProfile /> },
 ]
 
+
 const accountant = [
-    { path: '/', element: <h1>Accountant Dashboard</h1> },
+    { path: routes.accountantDashboard, element: <AccountantDashboard/> },
     { path: routes.signin, element: <Signin /> },
 
 ]
@@ -177,6 +216,7 @@ const accountant = [
 const registrar = [
     { path: '/', element: <h1>Registrar Dashboard</h1> },
     { path: routes.signin, element: <Signin /> },
+    {path:  routes.registrarDashbaord, element: <RegistrarDashboard />},
 ]
 
 const loggedOut = [
@@ -191,4 +231,4 @@ export const general = () => {
 }
 
 
-export default { pages, student, hod, registrar, loggedOut, accountant }
+export default { pages, student, hod, registrar, loggedOut, accountant, lecturer }
